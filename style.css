@@ -1,0 +1,266 @@
+/* Import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Monoton&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 4rem;
+}
+
+hr {
+  border-top: 2px dotted rgba(0, 13, 255, 0.199);
+  border-bottom: 0;
+  width: 66%;
+  margin: 3rem 0;
+}
+
+h3,
+h4,
+p {
+  line-height: 150%;
+}
+
+h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Noto Serif", serif;
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-family: "Bungee Shade", cursive;
+  font-size: 2.2rem;
+  font-weight: 100;
+  margin: 1rem 0;
+  color: #6e7680;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 100;
+  color: #6e7680;
+}
+
+small {
+  font-family: "Noto Serif", serif;
+  font-size: 1rem;
+  color: #6e7680;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.96);
+  display: grid;
+  align-content: center;
+  grid-template-columns: 8rem 10rem auto;
+  text-align: center;
+  padding-left: 1rem;
+  box-shadow: 0 1rem 1rem whitesmoke;
+}
+
+nav a,
+div {
+  color: black;
+}
+
+nav a:hover {
+  color: rgb(0, 128, 255);
+}
+
+.selected-nav {
+  border-bottom: 1.5px solid rgba(0, 13, 255, 0.199);
+  padding-bottom: 0.8rem;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  z-index: 1;
+  background-color: white;
+  text-align: left;
+}
+
+.dropdown-content div {
+  margin: 1rem;
+}
+
+.dropdown-content a {
+  line-height: 1.5;
+  color: rgb(0, 128, 255);
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  cursor: pointer;
+}
+
+.cover {
+  display: grid;
+  max-width: 800px;
+  justify-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.cover h1,
+.cover small,
+.cover h2 {
+  padding: 0 1rem;
+}
+
+.small-cover-img {
+  width: 250px;
+}
+
+.large-cover-img {
+  max-width: 600px;
+}
+
+.home-cover-img img {
+  max-width: 404px;
+}
+
+.section {
+  max-width: 1080px;
+  display: grid;
+  gap: 2rem;
+  padding-left: 1rem;
+}
+
+.section > h3 {
+  text-align: center;
+  margin: 0 1rf;
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.slide-left-column {
+  padding: 12px 1rem 0;
+}
+
+.slide-left-column h4 {
+  padding: 0;
+}
+
+.slide-left-column small {
+  text-align: left;
+}
+
+.slide-right-column {
+  display: grid;
+  justify-items: start;
+}
+
+.slide-right-column p,
+h4 {
+  max-width: 600px;
+  padding: 0 1.5em 0 1rem;
+}
+
+.slide-right-column img,
+video {
+  max-width: 600px;
+  padding: 2.5rem 1rem;
+}
+
+/* Media query: smaller than 1080px */
+
+@media (max-width: 1080px) {
+  .slide-right-column img {
+    max-width: 90%;
+    padding: 2.5rem 1rem;
+  }
+
+  .slide-right-column video {
+    max-width: 90%;
+    padding: 2.5rem 1rem;
+  }
+
+  .home-cover-img img {
+    width: 50%;
+  }
+}
+
+/* Media query: smaller than 880px */
+
+@media (max-width: 880px) {
+  .slide-left-column h2 {
+    text-align: center;
+  }
+
+  .large-cover-img {
+    max-width: 66%;
+  }
+
+  .home-cover-img img {
+    max-width: 66%;
+  }
+
+  .slide {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .slide-left-column {
+    max-width: 600px;
+    margin: 1rem;
+  }
+
+  .slide-left-column > h3 {
+    text-align: center;
+  }
+
+  .slide-right-column {
+    padding: 0 2rem;
+  }
+
+  .slide-right-column p {
+    max-width: 600px;
+  }
+
+  .slide-right-column img {
+    max-width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  .slide-right-column video {
+    max-width: 100%;
+    padding: 2.5rem 0;
+  }
+}
