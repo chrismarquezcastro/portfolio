@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Chris Marquez UX Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div><a href="index.html">Chris Marquez</a></div>
+      <div class="dropdown">
+        <div>UX Case Studies <i class="fa-solid fa-caret-down"></i></div>
+        <div class="dropdown-content">
+          <div>
+            <a href="./confirm-security-settings.html"
+              >Confirm security settings</a
+            >
+          </div>
+          <div>
+            <a href="./mobile-apps-redesign.html"
+              >First major mobile app redesign</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cover -->
+    <div class="cover">
+      <img
+        class="small-cover-img"
+        src="./images/security-settings.png"
+        alt="cover-decoration"
+      />
+      <h1>Admin needs to update security settings</h1>
+      <small>Kiteworks | Q2 – 2021 | Palo Alto, California</small>
+    </div>
+    <hr />
+
+    <!-- Design problem -->
+    <div class="section">
+      <div class="slide">
+        <div class="slide-left-column"><h3>Design Problem</h3></div>
+        <div class="slide-right-column group-text">
+          <h4>Problems observed</h4>
+          <p>
+            Kiteworks admins are in charge of enabling the business processes
+            and reducing the risks to the system and the data. Some settings
+            could be misused, opening the content and / or system to
+            vulnerabilities that could create serious problems for the customer
+            organization, as well as the Kiteworks organization.
+            <br /><br />
+            People working as Admins usually have little time to spare, so a
+            focused experience automatically presented upon update or sign in,
+            will allow affected admins to confirm the security settings that
+            apply to their system.
+          </p>
+          <h4>Hypothesis</h4>
+          <p>
+            One of the top priorities of the administrators is to keep the
+            system secure against bad actors and poor decision making.
+            Therefore, Admins are willing to rapidly take action on security
+            related issues.
+            <br /><br />
+            Admins are capable of making this decision, either on the spot or
+            later in the short term.
+          </p>
+          <h4>What the stake-holders asked me to solve</h4>
+          <p>
+            The Kiteworks security team identified a few settings that would
+            like system admins to review and confirm the state of these settings
+            to prevent risks.
+            <br /><br />
+            Enabling admins to confirm the settings with urgency, high clarity
+            and without much disruption.
+          </p>
+          <h4>How I set up to solve the problem</h4>
+          <p>
+            First I spoke to the security team members to understand the kind of
+            settings and the risks involved with each.
+            <br /><br />
+            I worked with the Product Manager on the team to identify the number
+            of customers that had the security settings activated.
+            <br /><br />
+            Once I understood the risks and the scope of the problem, I set
+            myself to prototype ideas for the interaction scenarios.
+            <br /><br />
+            Using the prototype I tested the user experience flows with team
+            members from UX, PM, Engineering, and Support as well as real
+            customer’ admins to validate the ideas and iterate the prototype.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- My role -->
+    <div class="section">
+      <div class="slide">
+        <div class="slide-left-column"><h3>My Role</h3></div>
+        <div class="slide-right-column group-text">
+          <h4>Collaboration across teams</h4>
+          <p>
+            As Product Designer, my goal is to gain enough insights into the
+            problem to produce ideas that can be tested and improved toward
+            solving the problem efficiently.
+            <br /><br />
+            I partner with UX team members to brainstorm ideas to re-use content
+            and patterns, and to develop the cohesive style, including voice.
+            <br /><br />
+            I partner with Product Managers to better understand the impact of
+            the problem in the organization as a whole, they also are great
+            advocates for the customer and the end user.
+            <br /><br />
+            I partner with Engineers to brainstorm ideas and the potential
+            opportunities provided by technology, as well as to implement the UI
+            design to the best quality.
+          </p>
+          <h4>Facilitation</h4>
+          <p>
+            Initially I had multiple interviews with stake-holders to gain
+            insights, most cases during video calls 1-1. Once I produced the
+            first prototype I started having review meetings with larger groups
+            from different teams.
+            <br /><br />
+            Once the UX design is mostly defined I do a kick-off meeting with
+            the Engineering team that is going to work on the feature to present
+            and answer questions about the project.
+          </p>
+          <h4>Impact to the team</h4>
+          <p>
+            The new component in the admin interface now allows the admin to use
+            another entry point and interaction model to present urgent
+            workflows to the admin upon either update or sign in.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Proposed solution -->
+    <div class="section">
+      <h3>Proposed Solution</h3>
+      <!-- Slide 1 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>Admin is prompted to verify a list of security settings.</h2>
+          <h4>
+            This was one of the first ideas tested at the interaction level, and
+            was constantly iterated as the main entry point.
+          </h4>
+          <p>
+            The list is organized by sections that map to the Admin UI
+            information architecture.<br /><br />When the user changes the
+            settings to reduce the risk, the item is then removed from the list.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <video
+            src="./videos/change-setting.mp4"
+            alt="change-setting"
+            controls
+          ></video>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>Admin can confirm the current state of the settings.</h2>
+          <h4>
+            This idea was proposed and refined together the PM and UX teams,
+            particularly working with the VP of Product and the UX writer.
+          </h4>
+          <p>
+            The interaction model adds some friction to the confirmation
+            process, but most importantly it tracks down the admin who confirmed
+            as a clear event on the log.
+            <br /><br />
+            Once the security setting is confirmed, it disappears from the list.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <video
+            src="./videos/confirm-setting.mp4"
+            alt="confirm-setting"
+            controls
+          ></video>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>
+            Admin can decide whether to engage with the interaction at that
+            time.
+          </h2>
+          <h4>
+            This is a must in UX, never trap the user, even if we as designers
+            this is for their own good. Is better to inform and give control to
+            people.
+          </h4>
+          <p>
+            By design we added some friction added to try to persuade the admin
+            to reconsider and review the security settings there and then.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <video
+            src="./videos/remind-later.mp4"
+            alt="remind-later"
+            controls
+          ></video>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>
+            Admin can navigate to each setting independently and make the
+            changes there, instead of the initial modal.
+          </h2>
+          <h4>
+            The idea was to present the behavior at the lowest level possible,
+            applying modularity such that was easly scalable.
+          </h4>
+          <p>
+            Admins will see a button on the nav bar with a count of the number
+            of settings to review and from there, access the modal.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <video
+            src="./videos/change-inline.mp4"
+            alt="change-inline"
+            controls
+          ></video>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- How the solution solved the problem -->
+    <div class="section">
+      <div class="slide">
+        <div class="slide-left-column">
+          <h3>How the solution solved the problem</h3>
+        </div>
+        <div class="slide-right-column group-text">
+          <h4>What can the users do now, VS before</h4>
+          <p>
+            More than 80% of customers engaged with the interaction and
+            completed the workflow, this caused minimal impact in the customer
+            support organization, which eventually converted the remaining
+            customers.
+          </p>
+          <h4>Life improvements</h4>
+          <p>
+            Less customers out there with potential exposures, and for those
+            remaining now there is a record of someone manually confirming the
+            setting in case of a dispute.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Challenges -->
+    <div class="section">
+      <h3>Challenges</h3>
+
+      <!-- Slide 1 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>UX + Product owner</h2>
+          <h4>
+            This is the most complex project I had to extend my role into the
+            Product Management realm.
+          </h4>
+          <p>
+            I already took on the role of product owner for many projects,
+            mostly UX improvements, but this was the first time a critical item
+            on the release was in large part my responsibility.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img src="./images/multiple-hats.png" alt="multiple hats" />
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>Critical cybersecurity subjects and interactions</h2>
+          <h4>
+            I spent extensive time with security engineers and stake-holders to
+            comprehend the implications of the risks, so that I could explain
+            those in the UI to admins in the various UX contexts.
+          </h4>
+          <p>
+            This included training the customer support and customer success
+            teams before release and stay close to them to hear from any blow
+            back.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img src="./images/critical-security.png" alt="critical-security" />
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>Multiple and complicated workflows</h2>
+          <h4>
+            The interaction had multiple entry and decision points cascaded
+            throughout the whole Admin User Experience.
+          </h4>
+          <p>
+            To a certain extent the entire set of features in the admin UI had
+            to be considered as part of an entire framework that guides the
+            admin to set the system in the most secure and comprehensive form.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img
+            src="./images/complicated-workflows.png"
+            alt="complicated-workflows"
+          />
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>Large number of iterations per component</h2>
+          <h4>
+            Usually when creating a new set of components, this involves more
+            iterations than an improvement.
+          </h4>
+          <p>
+            What was extraordinary in this case is the complexity and
+            sensitivity of each item, such that almost every word had to be
+            reviewed multiple times.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img
+            src="./images/multiple-iterations.png"
+            alt="multiple-iterations"
+          />
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>Extensive UX writing collaboration</h2>
+          <h4>
+            It was critical to hit the right tone between urgency, formality and
+            simplicity.
+          </h4>
+          <p>
+            This project also included an extensive email communication to
+            complement the workflow in the UI, including emails prior to the
+            interaction taking place, email triggered by the update, emails
+            triggered by inaction from admins.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img src="./images/writting-collab.png" alt="writting-collab" />
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Impact -->
+    <div class="section">
+      <div class="slide">
+        <div class="slide-left-column">
+          <h3>Impact</h3>
+        </div>
+        <div class="slide-right-column group-text">
+          <h4>Customer and Users</h4>
+          <p>
+            Customers reduced their risk exposure, and the admins have now a
+            better understanding of the impact of sensitive settings in the
+            system.
+          </p>
+          <h4>Kiteworks organization</h4>
+          <p>
+            If a customer gets impacted by an attack, indirectly impacts the
+            vendor in this case Kiteworks, so a reduced risk on customers also
+            reduces the risk for the Kiteworks organization.
+            <br /><br />
+            The product organization also has now a new UI component to leverage
+            for similar UX requirements, which has already happened.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Lessons Learned -->
+    <div class="section">
+      <div class="slide">
+        <div class="slide-left-column">
+          <h3>Lessons Learned</h3>
+        </div>
+        <div class="slide-right-column group-text">
+          <h4>Personally</h4>
+          <p>
+            First I spoke to the security team members to understand the kind of
+            settings and the risks involved with each.
+          </p>
+          <h4>As a team</h4>
+          <p>
+            I worked with the Product Manager on the team to identify the number
+            of customers that had the security settings activated.
+            <br /><br />
+            Once I understood the risks and the scope of the problem, I set
+            myself to prototype ideas for the interaction scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>

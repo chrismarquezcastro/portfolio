@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Chris Marquez UX Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div><a href="index.html">Chris Marquez</a></div>
+      <div class="dropdown">
+        <div>UX Case Studies <i class="fa-solid fa-caret-down"></i></div>
+        <div class="dropdown-content">
+          <div>
+            <a href="./confirm-security-settings.html"
+              >Confirm security settings</a
+            >
+          </div>
+          <div>
+            <a href="./mobile-apps-redesign.html"
+              >First major mobile app redesign</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cover -->
+    <div class="cover">
+      <img
+        class="large-cover-img"
+        src="./images/old-new-mobile.png"
+        alt="old-new-mobile"
+      />
+      <h1>Mobile apps first major redesign</h1>
+      <small>Kiteworks | Q1 – 2018 | Palo Alto, California</small>
+    </div>
+    <hr />
+
+    <!-- Design problem -->
+    <div class="section">
+      <div class="slide">
+        <div class="slide-left-column"><h3>Design Problem</h3></div>
+        <div class="slide-right-column group-text">
+          <h4>Problems observed</h4>
+          <p>
+            The navigation across the application wasn’t intuitive. For example
+            the main navigation was permanently available in the tablet, but on
+            phones the user needed to navigate all the way up in the tree to get
+            to the menu.
+          </p>
+          <img
+            src="./images/v1-movetray-actions-phone.png"
+            alt="Action menus phone old version"
+          />
+          <p>
+            The look and feel was too different from the mental models and
+            interactions used by the operating systems (iOS, Android).
+          </p>
+          <img
+            src="./images/v1-actions-tablet.png"
+            alt="Actions menu tablet old version"
+          />
+          <p>
+            There was no way to understand how and if people were using our
+            products and services.
+          </p>
+          <img
+            src="./images/v1-dashboard-tablet.png"
+            alt="Dashboard view old version"
+          />
+
+          <h4>Hypothesis</h4>
+          <p>
+            There was no need to force the same UI across all platforms, plenty
+            of UI patterns and components native to each platform and form
+            factor, there is no need to re-invent everything.
+            <br /><br />
+            Better design decisions could be made if we could track down the
+            user real behavior as much as possible.
+          </p>
+          <h4>What the stake-holders asked me to solve</h4>
+          <p>
+            This is one of those projects where no one formally asked me to
+            solve anything specifically.
+            <br /><br />
+            My motivation was driven by listening to the customer support team
+            about customer complaints and some key PM members.
+            <br /><br />
+            Once I planted the idea and showed some options, the requests
+            started coming in, for example it was during this iteration that the
+            first version of the camera mode hit the market.
+          </p>
+          <h4>How I set up to solve the problem</h4>
+          <p>
+            I explored the market for similar products on the B2C space to
+            identify the simpler and common patters. Specially the native
+            Material Design and iOS components.
+            <br /><br />
+            Interview external and internal stake-holders to get their
+            perspective on the current state of the app.
+            <br /><br />
+            The interview also dived into the expectations for the application,
+            in terms of business value to Kiteworks as well as its customers.
+            <br /><br />
+            Prototype and validate different ideas for navigation, key areas of
+            the product as well as new functionality.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- My role -->
+    <div class="section">
+      <div class="slide">
+        <div class="slide-left-column"><h3>My Role</h3></div>
+        <div class="slide-right-column group-text">
+          <h4>Collaboration across teams</h4>
+          <p>
+            It was key to socialize the problem among the PM and new executives,
+            get them involved in the problem and the solution.
+            <br /><br />
+            Partnering with PM and Engineering leads helped me balance the
+            design ideas to meet the crucial business needs while optimizing
+            development.
+            <br /><br />
+            It was critical to manage the expectations from development and the
+            executives so that progress was made at a good pace.
+            <br /><br />
+            Frequent check-ins with the customer support team helped to get a
+            perspective from someone who have heard the bad feedback of the
+            previous version.
+          </p>
+          <h4>Facilitation</h4>
+          <p>
+            The Product Manager and I engaged with internal and external
+            stake-holders in a cycle of design reviews and iterations.
+            <br /><br />
+            The Engineering teams and I identified the best approach to design
+            and develop the necessary components, re-using as much as possible
+            from each native library.
+          </p>
+          <h4>Impact to the team</h4>
+          <p>
+            The new design enabled new workflows like the camera view that will
+            go on to be used more widely in future releases.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Proposed solution -->
+    <div class="section">
+      <h3>Proposed Solution</h3>
+      <!-- Slide 1 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>
+            Use the navigation patterns widely adopted on the native platforms.
+          </h2>
+          <h4>
+            The bottom navigation as well as the overlay menu were common
+            patterns in the iOS and Android UI libraries.
+          </h4>
+          <p>
+            For the initial phase the design for tablets was very similar to
+            reduce the complications and hopefully have a single code base for
+            most components regardless of the device.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img
+            src="./images/v2-home-tablet.png"
+            alt="Home view tablet new version"
+          />
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>Optimize the navigation every step of the way.</h2>
+          <h4>
+            Make the UI so simple that it feels like there is nothing between
+            the user and the content.
+          </h4>
+          <p>
+            The UI should only show when is needed, or at least that's how it
+            should feel like for the end-users, from biometric sign in to
+            seamless gestures.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img
+            src="./images/v2-actions-phone.png"
+            alt="Various phone new views"
+          />
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>
+            Redesign every workflow and prioritize the most important use cases.
+          </h2>
+          <h4>
+            The email view now includes a badge to show the number of unread
+            messages.
+          </h4>
+          <p>
+            The look and feel should be similar to other commercial apps the do
+            the same thing, to leverage the knowledge most people already have
+            from using these.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img src="./images/v2-mail-tablet.png" alt="Mail tablet new design" />
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>
+            Take photos from the app and the content doesn't get saved to the
+            device.
+          </h2>
+          <h4>
+            The viewer of files was simplified to show and hide the controls for
+            the convenience of the user.
+          </h4>
+          <p>
+            End to end designer means to go into every situation with a critical
+            point of view to identify the right problems and solve them.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img
+            src="./images/v2-viewer-camera.png"
+            alt="Various new design views in phone"
+          />
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>
+            The new camera mode was front and center, readily available for the
+            user's thumbs.
+          </h2>
+          <h4>
+            The goal is to add more easy ways to add content into the Kiteworks
+            platform.
+          </h4>
+          <p>
+            Every new piece of content added to the platform represents an
+            investment from users to come back to platform in the near future.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img
+            src="./images/v2-home-files.png"
+            alt="Various new design views in phone"
+          />
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- How the solution solved the problem -->
+    <div class="section">
+      <div class="slide">
+        <div class="slide-left-column">
+          <h3>How the solution solved the problem</h3>
+        </div>
+        <div class="slide-right-column group-text">
+          <h4>What can the users do now, VS before</h4>
+          <p>
+            End-users can now leverage the design patterns they've learned over
+            time using other mobile apps.
+          </p>
+          <h4>Life improvements</h4>
+          <p>
+            Fewer customers out there with potential exposures, and for those
+            remaining now there is a record of someone manually confirming the
+            setting in case of a dispute.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Challenges -->
+    <div class="section">
+      <h3>Challenges</h3>
+
+      <!-- Slide 1 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>
+            There was turmoil due to the replacement of most of the C suite.
+          </h2>
+          <h4>
+            I saw the crisis as an opportunity to propose a new way for the UX
+            design philosophy.
+          </h4>
+          <p>
+            The main change that needed to get across was from a single fixed
+            design across all clients, to the simplicity and leverage of the
+            native platforms.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img src="./images/turm-oil.png" alt="Turmoil" />
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>The design team from then on was integrated by the PM team.</h2>
+          <h4>
+            Being close to the PM team can help to gain insights on the business
+            problem from the ground up.
+          </h4>
+          <p>
+            The amount of information can also be challenging due to numerous
+            projects, problems, and overall queries that the PM team receives on
+            a daily basis.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img src="./images/good-bad.png" alt="Good and bad" />
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-left-column">
+          <h2>The ratio of PM and Engineers to designers was overwhelming</h2>
+          <h4>
+            Simplicity is the best friend when trying to work with multiple
+            teams building in different platforms at the same time.
+          </h4>
+          <p>
+            Communication and a good partnership with the engineering team help
+            to identify the components that can be used out of the box, and
+            those that need modifications to fit within the style.
+          </p>
+        </div>
+        <div class="slide-right-column">
+          <img src="./images/stressful.png" alt="stressful" />
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Impact -->
+    <div class="section">
+      <div class="slide">
+        <div class="slide-left-column">
+          <h3>Impact</h3>
+        </div>
+        <div class="slide-right-column group-text">
+          <h4>Customer and Users</h4>
+          <p>
+            A better, simpler, more performant product will always be good for
+            the customer.
+          </p>
+          <h4>Kiteworks organization</h4>
+          <p>
+            Happier customers are more engaged and less likely to drop the
+            product from the vendor list.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Lessons Learned -->
+    <div class="section">
+      <div class="slide">
+        <div class="slide-left-column">
+          <h3>Lessons Learned</h3>
+        </div>
+        <div class="slide-right-column group-text">
+          <h4>Personally</h4>
+          <p>
+            Times of crisis are not as bad as they seem, and are actually times
+            of opportunity.
+          </p>
+          <h4>As a team</h4>
+          <p>
+            A new team was born from here on, The PM-UX with 80% of PM and only
+            20% of Designers. It kind of worked.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
