@@ -90,8 +90,7 @@ nav a:hover {
 }
 
 .selected-nav {
-  border-bottom: 2px solid rgb(0, 128, 255);
-  padding-bottom: 1.2rem;
+  font-weight: bold;
 }
 
 .social-icons {
@@ -101,7 +100,7 @@ nav a:hover {
 
 .social-icon {
   padding-left: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .dropdown {
@@ -112,7 +111,7 @@ nav a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 200px;
+  min-width: 240px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   z-index: 1;
@@ -126,11 +125,6 @@ nav a:hover {
 
 .dropdown-content a {
   line-height: 1.5;
-  color: rgb(0, 128, 255);
-}
-
-.dropdown-content a:hover {
-  text-decoration: underline;
 }
 
 .dropdown:hover .dropdown-content {
