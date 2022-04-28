@@ -71,7 +71,7 @@ li {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  padding: .25rem 0;
+  padding: 0.25rem 0;
 }
 
 nav {
@@ -89,7 +89,7 @@ nav {
 }
 
 nav a,
-div {
+nav div {
   color: black;
   font-size: 1.2rem;
 }
@@ -172,7 +172,7 @@ nav a:hover {
   max-width: 1080px;
   display: grid;
   gap: 2rem;
-  padding-left: 1rem;
+  padding: 0 2rem;
 }
 
 .section > h3 {
@@ -185,27 +185,17 @@ nav a:hover {
   grid-template-columns: 1fr 1.5fr;
 }
 
-.slide-left-column {
-  padding: 12px 1rem 0;
-}
-
-.slide-left-column h4 {
-  padding: 0;
-}
-
 .slide-left-column small {
   text-align: left;
 }
 
 .slide-right-column {
-  display: grid;
   justify-items: start;
 }
 
 .slide-right-column p,
-h4 {
+.slide-right-column h4 {
   max-width: 600px;
-  padding: 0 1.5em 0 1rem;
 }
 
 .slide-right-column img,
