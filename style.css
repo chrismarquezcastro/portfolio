@@ -100,6 +100,7 @@ nav p {
 
 nav a:hover {
   color: rgb(0, 128, 255);
+  text-decoration: none;
 }
 
 .selected-nav {
