@@ -140,7 +140,8 @@ nav a:hover {
   transform: translateX(-4rem);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content {
   display: block;
   cursor: pointer;
 }
