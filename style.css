@@ -28,7 +28,7 @@ li {
 
 h1 {
   font-family: "Noto Serif", serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -46,8 +46,7 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
-  font-style: italic;
-  font-weight: 100;
+  font-weight: 900;
   color: #6e7680;
 }
 
@@ -65,6 +64,9 @@ p {
 a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 
 li {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -72,6 +74,7 @@ li {
   font-weight: 300;
   font-size: 1rem;
   padding: 0.25rem 0;
+  overflow-wrap: break-word;
 }
 
 nav {
@@ -85,7 +88,7 @@ nav {
   grid-template-columns: 10rem 11rem auto;
   text-align: center;
   padding-left: 1rem;
-  box-shadow: 0 1rem 1rem whitesmoke;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
 }
 
 nav a,
@@ -147,13 +150,20 @@ nav a:hover {
   max-width: 800px;
   justify-items: center;
   text-align: center;
-  margin-top: 6rem;
+  margin: 6rem 2rem 0;
 }
 
 .cover h1,
 .cover small,
-.cover h2 {
+.cover h2,
+.cover p {
   padding: 0 1rem;
+  max-width: 600px;
+}
+
+.cover video {
+  max-width: 800px;
+  padding: 2rem 0;
 }
 
 .small-cover-img {
@@ -183,6 +193,7 @@ nav a:hover {
 .slide {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
 }
 
 .slide-left-column small {
@@ -191,17 +202,19 @@ nav a:hover {
 
 .slide-right-column {
   justify-items: start;
+  max-width: 600px;
 }
 
-.slide-right-column p,
-.slide-right-column h4 {
-  max-width: 600px;
+.slide-right-column li {
+  max-width: 550px;
 }
 
 .slide-right-column img,
-video {
+.slide-right-column video {
   max-width: 600px;
   padding: 2.5rem 1rem;
+  background-color: #eaedf1;
+  padding: 0.25rem;
 }
 
 .slide-50-50 {
@@ -217,14 +230,19 @@ video {
 /* Media query: smaller than 1080px */
 
 @media (max-width: 1080px) {
-  .slide-right-column img {
-    max-width: 90%;
-    padding: 2.5rem 1rem;
+  .cover video {
+    max-width: 100%;
   }
 
+  .slide {
+    grid-template-columns: 1fr;
+  }
+
+  .slide-right-column img,
   .slide-right-column video {
     max-width: 90%;
     padding: 2.5rem 1rem;
+    padding: 0.25rem;
   }
 
   .home-cover-img img {
@@ -243,6 +261,10 @@ video {
 /* Media query: smaller than 760px */
 
 @media (max-width: 760px) {
+  h1 {
+    font-size: 2rem;
+  }
+
   .slide-left-column h2 {
     text-align: center;
   }
@@ -255,22 +277,13 @@ video {
     max-width: 50%;
   }
 
-  .slide {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
   .slide-left-column {
     max-width: 600px;
     margin: 1rem;
   }
 
-  .slide-left-column > h3 {
-    text-align: center;
-  }
-
   .slide-right-column {
-    padding: 0 2rem;
+    margin: 1rem;
     max-width: 600px;
   }
 
@@ -281,6 +294,7 @@ video {
   .slide-right-column img {
     max-width: 100%;
     padding: 1.5rem 0;
+    padding: 0.25rem;
   }
 
   .slide-right-column video {
