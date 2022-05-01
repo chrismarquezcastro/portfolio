@@ -92,7 +92,8 @@ nav {
 }
 
 nav a,
-nav div {
+nav div,
+nav p {
   color: black;
   font-size: 1.2rem;
 }
