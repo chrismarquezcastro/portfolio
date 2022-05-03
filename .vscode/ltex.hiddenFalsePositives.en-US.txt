@@ -1,3 +1,4 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q<br /><br /> Once the security setting is confirmed, it disappears from the list.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q</p> </div> <div class=\"slide-right-column\"> <img src=\"./images/multiple-hats.png\" alt=\"multiple hats\" /> </div> </div> <!-- Slide 2 --> <div class=\"slide\"> <div class=\"slide-left-column\"> <h2>Critical cybersecurity subjects and interactions</h2> <h4> I spent extensive time with security engineers and stake-holders to comprehend the implications of the risks, so that I could explain those in the UI to admins in the various UX contexts.\\E$"}
 {"rule":"ID_CASING","sentence":"^\\QSed illo ratione nam rerum fugit quas possimus officia eos, tempore vel, qui porro eius id error nemo animi atque cumque laboriosam?\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qmodal to inform admins about the recently installed version.\"\\E$"}

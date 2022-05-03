@@ -62,8 +62,10 @@ p {
 }
 
 a {
+  color: rgb(0, 85, 255);
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -104,7 +106,7 @@ nav a:hover {
 }
 
 nav a:active {
-  color: rgb(53, 0, 188);
+  color: rgba(0, 13, 255, 0.2);
 }
 
 .selected-nav {
@@ -124,6 +126,11 @@ nav a:active {
 .dropdown {
   position: relative;
   cursor: pointer;
+}
+
+.dropdown:hover {
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
 }
 
 .dropdown-content {
@@ -222,7 +229,7 @@ nav a:active {
   padding: 2.5rem 1rem;
   background-color: #eaedf1;
   padding: 0.25rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .slide-50-50 {
