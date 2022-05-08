@@ -62,12 +62,12 @@
           <h4>Identify user / business needs</h4>
           <p>
             The primary motivation was to protect the Kiteworks organization
-            from its customers opening risk exposure, due to missunderstanding
-            specific security features, that meant that it was a high-priority
-            for the CEO, VP of product, and stock-holders of the company.
+            from its customers' opening risk exposure due to misunderstanding
+            specific security features, which meant that it was a high priority
+            for the CEO, VP of product, and company stockholders.
           </p>
           <p>
-            Customers who were using features in a way that could be impacted,
+            Customers who were using features in a way that could be impacted
             needed to know about it to either change or confirm the security
             settings.
           </p>
@@ -95,13 +95,14 @@
           <h4>Brainstorming</h4>
           <p>
             During the initial brainstorming sessions, the team agreed on the
-            overall interaction model of the wizard, that uses an overlay dialog
+            overall interaction model of the wizard that uses an overlay dialog
             to enable the user to complete specific tasks.
           </p>
           <p>
-            At the time we didn't know the exact settings that were going to be
-            targeted, however the requirement from the beggining was to create a
-            framework that could contain different levels of risk based on the
+            Early on the project, we didn't know the exact settings that were
+            going to be targeted; however, the requirement from the beginning
+            was to create a framework that could contain different levels of
+            risk based on the
             <a href="https://nvd.nist.gov/vuln-metrics/cvss" target="_blank"
               >Common Vulnerability Scoring System</a
             >
@@ -111,17 +112,17 @@
           <p>
             Later on, the requirements expanded to include an email campaign
             that would prepare the targeted admins ahead of time, guide them
-            once it was available, and shared the information among relevan
+            once it was available, and share the information among relevant
             admins within each organization.
           </p>
 
           <!-- User research -->
           <h4>User research</h4>
           <p>
-            We identified the customers that were going to be impacted and
-            reached out to a handful of those that we already had a cooperation
-            relationship, we initially focused on understanding their specific
-            motivations to use the settings in such matter.
+            We identified the customers that were going to be impacted to reach
+            out to a handful we already had a cooperation relationship, we
+            initially focused on understanding their specific motivations to use
+            the settings in that way.
           </p>
 
           <!-- Problem / Solution validation -->
@@ -131,16 +132,16 @@
             to test the prototype and get their feedback. The goal was to
             identify wheter they think the workflow too aggrasive, if they can
             understand what's expected from them, and if something they expected
-            was missing. We met a couple more time after that before release to
-            test over the iterations and the further extensions like the email
-            campaign.
+            was missing. We met a couple more times after that before the
+            release to test over the iterations and the further extensions like
+            the email campaign.
           </p>
 
           <!-- Team alignment -->
           <h4>Team alignment</h4>
           <p>
-            I held multiple meetings depending on the stage of the project with
-            multiple memebers of different teams, once in a while I would bring
+            I held multiple meetings depending on the stage of the project, with
+            multiple memebers of different teams; once in a while, I would bring
             the larger group to inform the progress and discuss contradictory
             opinions from stake-holders. The majority of the sessions were with
             the relevant people in smaller groups.
@@ -181,7 +182,7 @@
               setting.
             </li>
             <li>
-              Create friction that ensures that the admin is concious about the
+              Create friction that ensures that the admin is concious of the
               changes applied.
             </li>
           </ul>
@@ -190,8 +191,8 @@
             alt="Early version of confirmation method using password"
           />
           <p>
-            One early concept explored was to force the admin to confirm the
-            decisdion by entering their password, this was dismissed as
+            One early concept explored was, forcing the admin to confirm the
+            decisdion by entering their password; this was dismissed as
             something too aggresive and not necessary from the security
             perspective.
           </p>
@@ -199,12 +200,12 @@
           <h4>Iterations</h4>
           <p>
             The majority of the iterations happened on the wizard interaction
-            model and the language, we started with a model of multiple levels
-            of risk displayed at once and ended focusing only on 4 settings, all
-            of them very high-risk.
+            model and the copy writting; we started with a model of multiple
+            levels of risk displayed at once and ended focusing only on 4
+            settings, all very high-risk.
           </p>
           <p>
-            The first few iterations focused only on the wizard approach, all
+            The first few iterations focused only on the wizard approach; all
             the components created were new and unique to the wizard.
           </p>
           <img
@@ -213,11 +214,11 @@
           />
           <p>
             The first release of this feature focused on high-risk settings
-            only, therefore we only presented one group of settings at
-            high-riskand prioritize them top to bottom depending on its score.
+            only; therefore, we only presented one group of settings at high
+            risk and prioritized them top to bottom depending on their score.
             Another early idea was to add contextual information boxes next to
             sensitive settings even if they were not activated so that admins
-            can learn about the best practices.
+            could learn about the best practices.
           </p>
           <img
             src="./images/iteration-on-wizard-2.png"
@@ -225,7 +226,7 @@
           />
           <p>
             We had some versions where the grouping of the settings would
-            simplify one view but overcomplicate others, this version shows a
+            simplify one view but overcomplicate others; this version shows a
             badge to recognize the number of settings under each line.
           </p>
           <img
@@ -234,7 +235,7 @@
           />
           <p>
             When the admin navigates into a group of settings, the accordion
-            will allow to display one versus the other and when one is
+            will allow displaying one versus the other, and when one is
             completed, it disappears from the wizard.
           </p>
           <img
@@ -243,20 +244,21 @@
           />
           <h4>Final solution</h4>
           <p>
-            The wizard landing page explains the admin about the list of
-            settings that need attention, shows the context of each setting,
-            allows for interaction on a single setting basis so that the log of
-            the confirmation is per setting.
+            The wizard landing page explains to the admin the list of settings
+            that need attention, shows the context of each setting and allows
+            for interaction on a single setting basis so that the confirmation
+            log is per setting.
           </p>
           <img
             src="./images/final-wizard-list.png"
             alt="Final wizard top page for list of security settings"
           />
           <p>
-            Admins can take two paths on each security setting, they can either
-            change the setting to dissengage the risk and save, or they can go
-            through the process of confirming the risk navigating over multiple
-            friction points to make sure the admin understands what's happening.
+            Admins can take two paths on each security setting. They can either
+            change the setting to disengage the risk and save, or they can go
+            through the process of confirming the risk, by navigating over
+            multiple friction points to make sure the admin understands what's
+            happening.
           </p>
           <img
             src="./images/final-change-setting.png"
@@ -276,9 +278,9 @@
             alt="Modal asking the admin to confirm that wants to exit the wizard"
           />
           <p>
-            The same components created in the context of the wizard were also
-            extended to the pages where each setting is located, this allows the
-            admin to confirm the setting from the context that is familiar with.
+            The same components created in wizard context were also extended to
+            the pages where each setting is located; this allows the admin to
+            confirm the setting from the context that she is familiar with.
           </p>
           <img
             src="./images/final-inline-access.png"
@@ -299,39 +301,39 @@
           <h4>Success metrics</h4>
           <p>
             More than 80% of customers engaged with the interaction and
-            completed the workflow, this caused minimal impact in the customer
-            support organization, the remaining customers were helped by a
-            customer support representative.
+            completed the workflow; this caused a minimal impact on the customer
+            support organization, and as planned a customer support
+            representative helped the remaining customers.
           </p>
           <p>
             There are fewer customers out there with potential security
-            exposures, and for those remaining now there is a record of someone
+            exposures, and for those remaining now, there is a record of someone
             manually confirming the setting in case of a dispute.
           </p>
           <h4>Learnings</h4>
           <p>
-            Personally, I learned new cybersecurity concepts and implications, I
-            was able to bring a large group of people together in a high-stake
-            project to deliver on time.
+            I learned new cybersecurity concepts and implications; I was able to
+            bring a large group of people together on a high-stake project to
+            deliver on time.
           </p>
           <p>
-            As a team, we developed the beggining of a framework to educate the
-            admin around the setup of the system, so that is protected. We were
-            able to start the library of components for the design system and
-            these was the first set of those applied to this UI.
+            As a team, we developed the beginning of a framework to educate the
+            admin about the system's set up so that it is protected. We were
+            able to start the library of components for the design system, and
+            the first set of those components is applied to this UI.
           </p>
           <h4>Future iterations</h4>
           <p>
             The new interaction model used by the wizard could be used for any
-            other that required inmidiate and focused attention from the admin,
-            at the same time while working on the security feature the same
-            stake-holders pushed for the implementation of the "What's new!
-            modal to inform admins about the recently installed version."
+            other that required immediate and focused attention from the admin;
+            at the same time, while working on the security feature, the same
+            stakeholders pushed for the implementation of the "What's new! modal
+            to inform admins about the recently installed version."
           </p>
           <img src="./images/what-is-new.png" alt="what's new modal" />
           <p>
-            In a future release a new project to update contacts from the
-            customer, used the same interaction and wizard screen.
+            In a future release, a new project to update contacts from the
+            customer used the same interaction and wizard screen.
           </p>
           <img
             src="./images/confirm-advisory-contacts.png"

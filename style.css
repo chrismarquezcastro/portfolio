@@ -269,6 +269,7 @@ nav a:active {
 
   .slide {
     grid-template-columns: 1fr;
+    margin-top: 2.5rem;
   }
 
   .slide-right-column img,
@@ -301,6 +302,10 @@ nav a:active {
 
   .home-cover-img img {
     max-width: 50%;
+  }
+
+  .slide {
+    margin-top: 3rem;
   }
 
   .slide-left-column {
