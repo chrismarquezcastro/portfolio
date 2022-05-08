@@ -80,10 +80,10 @@ li {
 }
 
 .foot-note {
-  font-size: .85rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: #6e7680;
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   margin-bottom: 2.5rem;
 }
 
@@ -237,7 +237,8 @@ nav a:active {
   text-align: left;
 }
 
-.slide-left-column small {
+.slide-left-column small,
+.slide-left-column h2 {
   text-align: left;
 }
 
@@ -258,7 +259,6 @@ nav a:active {
   padding: 0.25rem;
   border-radius: 0.5rem;
 }
-
 
 /* Media query: smaller than 1080px */
 
