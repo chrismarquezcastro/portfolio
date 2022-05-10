@@ -1,0 +1,64 @@
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(15, 8, 26, 0.919);
+}
+
+i {
+  color: rgba(0, 0, 0, 0);
+  padding: 0.1rem;
+}
+
+nav i {
+  color: black;
+}
+
+.grid-31x31 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-31x31:hover {
+  transform: scale(2);
+  transition: 1s;
+}
+
+.base {
+  margin: 0.05rem;
+  border-radius: 0.2rem;
+  font-size: 4px;
+}
+
+.blue {
+  background-color: dodgerblue;
+}
+
+.black {
+  background-color: black;
+}
+
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: white;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.orange {
+  background-color: orange;
+}

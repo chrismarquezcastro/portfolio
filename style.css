@@ -96,7 +96,7 @@ nav {
   display: grid;
   align-content: center;
   align-items: center;
-  grid-template-columns: 12rem 11rem auto;
+  grid-template-columns: 12rem 11rem 7rem auto;
   text-align: center;
   padding-left: 1rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
