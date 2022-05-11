@@ -271,7 +271,11 @@ a:active {
 .card:hover {
   transform: scale(1.1);
   transition: 0.5s;
-  background-color: rgb(185, 139, 255);
+  background-color: rgb(145, 255, 139);
+}
+
+.card .foot-note {
+  margin: 0;
 }
 
 .card button {
