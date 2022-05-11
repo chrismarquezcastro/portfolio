@@ -248,7 +248,7 @@ a:active {
 .card {
   box-shadow: 0 0.5rem 0 black;
   border: 2px solid black;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   padding: 1rem;
   background-color: white;
   max-width: 30rem;
@@ -257,7 +257,7 @@ a:active {
 .card:hover {
   transform: scale(1.1);
   transition: 0.5s;
-  background-color: rgb(212, 255, 203)
+  background-color: rgb(185, 139, 255)
 }
 
 .card button {
