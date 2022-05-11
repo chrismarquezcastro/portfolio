@@ -184,7 +184,7 @@ a:active {
   max-width: 800px;
   justify-items: center;
   text-align: center;
-  margin: 6rem 2rem 0;
+  margin: 6rem 2rem 2rem;
 }
 
 .cover h1,
@@ -198,6 +198,16 @@ a:active {
 .cover video {
   max-width: 800px;
   padding: 2rem 0;
+}
+
+.avatar-signature {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+}
+
+.avatar-signature img {
+  width: 72px;
+  border-radius: 1rem;
 }
 
 .vertical-video {
@@ -285,6 +295,10 @@ a:active {
 .cover-vertical-video h1,
 .cover-vertical-video p {
   text-align: left;
+}
+
+.quetzal {
+  width: 50%;
 }
 
 .slide-left-column small,
