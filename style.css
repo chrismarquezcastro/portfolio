@@ -399,7 +399,7 @@ a:active {
   nav {
     grid-template-columns: 11rem 9rem 5rem auto;
   }
-  
+
   nav a,
   nav div,
   nav p {
@@ -409,6 +409,18 @@ a:active {
 
   h1 {
     font-size: 2rem;
+  }
+
+  .section {
+    margin: 1rem 2rem;
+  }
+
+  .slide {
+    gap: 0;
+  }
+
+  .landing {
+    margin-top: 4rem;
   }
 
   .large-cover-img {
@@ -433,13 +445,10 @@ a:active {
 
   .slide-right-column img {
     max-width: 100%;
-    padding: 1.5rem 0;
-    padding: 0.25rem;
   }
 
   .slide-right-column video {
     max-width: 100%;
-    padding: 2.5rem 0;
   }
 
   .social-icons {
@@ -447,7 +456,7 @@ a:active {
   }
 
   .dropdown-content {
-    transform: translateX(-4rem);
+    transform: translateX(-5rem);
   }
 
   .cover-vertical-video {
