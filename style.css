@@ -217,10 +217,9 @@ a:active {
 }
 
 .section {
-  max-width: 1080px;
+  max-width: 1000px;
   display: grid;
   gap: 2rem;
-  padding: 0 2rem;
 }
 
 .section h2 {
@@ -230,6 +229,42 @@ a:active {
 .section > h3 {
   text-align: center;
   margin: 0 1rf;
+}
+
+.landing {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  margin: 6rem 2rem 2rem 2rem;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+
+.landing-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.card {
+  box-shadow: 0 0.5rem 0 black;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: white;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+.card button {
+  justify-self: end;
+}
+
+.card h2 {
+  text-align: left;
+  margin-top: 0;
 }
 
 .slide {
@@ -273,7 +308,8 @@ a:active {
   border-radius: 0.5rem;
 }
 
-.slide-right-column button {
+.slide-right-column button,
+.card button {
   font-size: 1.1rem;
   font-weight: 500;
   border: 1px solid rgb(175, 202, 255);
@@ -285,14 +321,16 @@ a:active {
   cursor: pointer;
 }
 
-.slide-right-column button:hover {
+.slide-right-column button:hover,
+.card button:hover {
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 00.25);
   color: white;
   background-color: rgb(0, 85, 255);
   border: 1px solid rgb(0, 85, 255);
 }
 
-.slide-right-column button:active {
+.slide-right-column button:active,
+.card button:active {
   box-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
   border: 1px solid rgb(0, 85, 255);
   transform: translateY(2px);
