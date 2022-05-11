@@ -396,6 +396,17 @@ a:active {
 /* Media query: smaller than 760px */
 
 @media (max-width: 760px) {
+  nav {
+    grid-template-columns: 11rem 9rem 5rem auto;
+  }
+  
+  nav a,
+  nav div,
+  nav p {
+    color: black;
+    font-size: 1rem;
+  }
+
   h1 {
     font-size: 2rem;
   }
