@@ -257,7 +257,7 @@ a:active {
 .card:hover {
   transform: scale(1.1);
   transition: 0.5s;
-  background-color: rgb(255, 251, 203)
+  background-color: rgb(212, 255, 203)
 }
 
 .card button {
