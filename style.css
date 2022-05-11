@@ -235,7 +235,7 @@ a:active {
 .landing {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  margin: 6rem 4rem 2rem 4rem;
+  margin: 6rem 4rem 3rem 4rem;
   gap: 1rem;
 }
 
@@ -257,11 +257,11 @@ a:active {
 .card:hover {
   transform: scale(1.1);
   transition: 0.5s;
-  background-color: rgb(185, 139, 255)
+  background-color: rgb(185, 139, 255);
 }
 
 .card button {
-  justify-self: end;
+  width: 100%;
 }
 
 .card h2 {
@@ -389,7 +389,6 @@ a:active {
   .home-cover-img img {
     max-width: 50%;
   }
-
 
   .slide-left-column {
     max-width: 600px;
