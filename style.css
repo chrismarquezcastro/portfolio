@@ -104,13 +104,17 @@ nav {
 
 nav .home {
   display: grid;
-  grid-template-columns: 16px auto;
+  grid-template-columns: 32px auto;
   align-items: center;
 }
 
 .home {
   padding-left: 0.5rem;
   margin: 0;
+}
+
+.home img {
+  border-radius: 1rem;
 }
 
 nav a,
