@@ -220,6 +220,7 @@ a:active {
   max-width: 1000px;
   display: grid;
   gap: 2rem;
+  margin: 0 4rem;
 }
 
 .section h2 {
@@ -234,8 +235,7 @@ a:active {
 .landing {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  margin: 6rem 2rem 2rem 2rem;
-  padding: 0 2rem;
+  margin: 6rem 4rem 2rem 4rem;
   gap: 1rem;
 }
 
@@ -251,11 +251,13 @@ a:active {
   border-radius: 0.5rem;
   padding: 1rem;
   background-color: white;
+  max-width: 30rem;
 }
 
 .card:hover {
   transform: scale(1.1);
-  transition: .5s;
+  transition: 0.5s;
+  background-color: rgb(255, 251, 203)
 }
 
 .card button {
@@ -340,16 +342,15 @@ a:active {
   padding-right: 0.5rem;
 }
 
-/* Media query: smaller than 1080px */
+/* Media query: smaller than 1000px */
 
-@media (max-width: 1080px) {
+@media (max-width: 1000px) {
   .cover video {
     max-width: 100%;
   }
 
   .slide {
     grid-template-columns: 1fr;
-    margin-top: 2.5rem;
   }
 
   .slide-right-column img,
@@ -366,6 +367,11 @@ a:active {
 
   .home-cover-img img {
     width: 90%;
+  }
+
+  .landing-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 
@@ -384,17 +390,12 @@ a:active {
     max-width: 50%;
   }
 
-  .slide {
-    margin-top: 3rem;
-  }
 
   .slide-left-column {
     max-width: 600px;
-    margin: 1rem;
   }
 
   .slide-right-column {
-    margin: 1rem;
     max-width: 600px;
   }
 
@@ -422,6 +423,10 @@ a:active {
   }
 
   .cover-vertical-video {
+    grid-template-columns: 1fr;
+  }
+
+  .landing {
     grid-template-columns: 1fr;
   }
 }
