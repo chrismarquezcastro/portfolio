@@ -188,7 +188,7 @@ a:active {
   max-width: 1000px;
   justify-items: center;
   text-align: center;
-  margin: 6rem 2rem 2rem;
+  margin: 5rem 2rem 2rem;
 }
 
 .cover h1,
@@ -247,7 +247,7 @@ a:active {
 .landing {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  margin: 6rem 4rem 3rem 4rem;
+  margin: 5rem 4rem 3rem 4rem;
   gap: 1rem;
 }
 
@@ -294,9 +294,12 @@ a:active {
 
 .cover-vertical-video {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  padding-bottom: 1rem;
+}
+
+.cover-vertical-video video {
+  margin-top: 2rem;
 }
 
 .cover-vertical-video h1,
