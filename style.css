@@ -338,7 +338,7 @@ a:active {
 .card button {
   font-size: 1.1rem;
   font-weight: 500;
-  border: 1px solid rgb(185, 139, 255);
+  border: 2px solid rgb(185, 139, 255);
   background-color: white;
   color: rgb(0, 85, 255);
   border-radius: 1rem;
@@ -352,7 +352,7 @@ a:active {
   box-shadow: 0 0.25rem 0 black;
   color: white;
   background-color: rgb(0, 85, 255);
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 .slide-right-column button:active,
