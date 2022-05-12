@@ -195,7 +195,6 @@ a:active {
 .cover small,
 .cover h2,
 .cover p {
-  padding: 0 1rem;
   max-width: 600px;
 }
 
