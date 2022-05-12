@@ -8,7 +8,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: #FFFEFC;
+  background-color: #fffefc;
   padding-bottom: 4rem;
 }
 
@@ -404,6 +404,11 @@ a:active {
   nav {
     grid-template-columns: 11rem 9rem 5rem auto;
   }
+  
+  .social-icons,
+  nav .css-art {
+    display: none;
+  }
 
   nav a,
   nav div,
@@ -462,10 +467,6 @@ a:active {
 
   .slide-right-column video {
     max-width: 100%;
-  }
-
-  .social-icons {
-    display: none;
   }
 
   .dropdown-content {
