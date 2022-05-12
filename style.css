@@ -424,7 +424,7 @@ a:active {
     gap: 0;
   }
 
-  .landing {
+  .landing, .cover-vertical-video, .cover {
     margin-top: 4rem;
   }
 
