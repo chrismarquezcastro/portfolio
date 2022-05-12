@@ -370,7 +370,7 @@ a:active {
 
 @media (max-width: 1000px) {
   .cover video {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .slide {
@@ -398,9 +398,9 @@ a:active {
   }
 }
 
-/* Media query: smaller than 760px */
+/* Media query: smaller than 800px */
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
   nav {
     grid-template-columns: 11rem 9rem 5rem auto;
   }
@@ -410,6 +410,10 @@ a:active {
   nav p {
     color: black;
     font-size: 1rem;
+  }
+
+  .cover video {
+    max-width: 100%;
   }
 
   h1 {
@@ -424,8 +428,12 @@ a:active {
     gap: 0;
   }
 
-  .landing, .cover-vertical-video, .cover {
-    margin-top: 4rem;
+  .landing {
+    margin-top: 5rem;
+  }
+
+  .cover {
+    text-align: left;
   }
 
   .large-cover-img {
