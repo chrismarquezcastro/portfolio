@@ -185,7 +185,7 @@ a:active {
 
 .cover {
   display: grid;
-  max-width: 800px;
+  max-width: 1000px;
   justify-items: center;
   text-align: center;
   margin: 6rem 2rem 2rem;
@@ -201,7 +201,6 @@ a:active {
 
 .cover video {
   max-width: 800px;
-  padding: 2rem 0;
 }
 
 .avatar-signature {
@@ -298,6 +297,7 @@ a:active {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
+  padding-bottom: 1rem;
 }
 
 .cover-vertical-video h1,
@@ -377,7 +377,6 @@ a:active {
 
   .slide-right-column img,
   .slide-right-column video {
-    max-width: 90%;
     padding: 2.5rem 1rem;
     padding: 0.25rem;
   }
