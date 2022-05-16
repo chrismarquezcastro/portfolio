@@ -172,7 +172,8 @@ nav p {
   font-size: 1.2rem;
 }
 
-nav a:hover {
+nav a:hover,
+.home p:hover {
   color: var(--hyperlink-color);
   text-decoration: none;
 }
