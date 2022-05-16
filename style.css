@@ -1,6 +1,19 @@
 /* Import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Monoton&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+:root {
+  --primary-text-color: black;
+  --secondary-text-color: #6e7680;
+  --hyperlink-color: rgb(0, 85, 255);
+  --primary-bg-color: #fffefc;
+  --secondary-bg-color: white;
+  --terciary-bg-color: #eaedf1;
+  --border-color: rgba(0, 13, 255, 0.199);
+  --subtle-shadow-color: rgba(0, 0, 0, 0.05);
+  --primary-outline-color: rgb(185, 139, 255);
+  --primary-highlight-color: rgb(145, 255, 139);
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -8,12 +21,12 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: #fffefc;
+  background-color: var(--primary-bg-color);
   padding-bottom: 4rem;
 }
 
 hr {
-  border-top: 2px dotted rgba(0, 13, 255, 0.199);
+  border-top: 2px dotted var(--border-color);
   border-bottom: 0;
   width: 66%;
   margin: 3rem 0;
@@ -41,19 +54,19 @@ h3 {
   font-size: 2.2rem;
   font-weight: 100;
   margin: 1rem 0;
-  color: #6e7680;
+  color: var(--secondary-text-color);
 }
 
 h4 {
   font-size: 1.5rem;
   font-weight: 900;
-  color: #6e7680;
+  color: var(--secondary-text-color);
 }
 
 small {
   font-family: "Noto Serif", serif;
   font-size: 1rem;
-  color: #6e7680;
+  color: var(--secondary-text-color);
 }
 
 p {
@@ -62,7 +75,7 @@ p {
 }
 
 a {
-  color: rgb(0, 85, 255);
+  color: var(--hyperlink-color);
   text-decoration: none;
 }
 
@@ -82,7 +95,7 @@ li {
 .foot-note {
   font-size: 0.85rem;
   font-weight: 500;
-  color: #6e7680;
+  color: var(--secondary-text-color);
   margin-top: 0.25rem;
   margin-bottom: 2.5rem;
 }
@@ -92,14 +105,14 @@ nav {
   top: 0;
   width: 100%;
   height: 4rem;
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: var(--secondary-bg-color);
   display: grid;
   align-content: center;
   align-items: center;
   grid-template-columns: 12rem 11rem 6rem auto;
   text-align: center;
   padding-left: 1rem;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1rem 1rem var(--subtle-shadow-color);
 }
 
 nav .home {
@@ -120,17 +133,18 @@ nav .home {
 nav a,
 nav div,
 nav p {
-  color: black;
+  color: var(--primary-text-color);
   font-size: 1.2rem;
 }
 
 nav a:hover {
-  color: rgb(0, 85, 255);
+  color: var(--hyperlink-color);
   text-decoration: none;
 }
 
 a:active {
-  color: rgba(1, 7, 117, 0.707);
+  filter: brightness(70%);
+  text-decoration: none;
 }
 
 .selected-nav {
@@ -153,7 +167,7 @@ a:active {
 }
 
 .dropdown:hover {
-  background-color: whitesmoke;
+  background-color: var(--terciary-bg-color);
   border-radius: 0.5rem;
 }
 
@@ -161,10 +175,10 @@ a:active {
   display: none;
   position: absolute;
   min-width: 240px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px var(--subtle-shadow-color);
   border-radius: 1rem;
   z-index: 1;
-  background-color: white;
+  background-color: var(--secondary-bg-color);
   text-align: left;
 }
 
@@ -258,18 +272,18 @@ a:active {
 }
 
 .card {
-  box-shadow: 0 0.5rem 0 black;
-  border: 2px solid black;
+  box-shadow: 0 0.5rem 0 var(--primary-text-color);
+  border: 2px solid var(--primary-text-color);
   border-radius: 1rem;
   padding: 1rem;
-  background-color: white;
+  background-color: var(--secondary-bg-color);
   max-width: 30rem;
 }
 
 .card:hover {
   transform: scale(1.1);
   transition: 0.5s;
-  background-color: rgb(145, 255, 139);
+  background-color: var(--primary-highlight-color);
 }
 
 .card .foot-note {
@@ -325,11 +339,12 @@ a:active {
 }
 
 .slide-right-column img,
-.slide-right-column video {
+.slide-right-column video,
+.cover video {
   max-width: 600px;
   max-height: 600px;
   padding: 2.5rem 1rem;
-  background-color: #eaedf1;
+  background-color: var(--terciary-bg-color);
   padding: 0.25rem;
   border-radius: 0.5rem;
 }
@@ -338,9 +353,9 @@ a:active {
 .card button {
   font-size: 1.1rem;
   font-weight: 500;
-  border: 2px solid rgb(185, 139, 255);
-  background-color: white;
-  color: rgb(0, 85, 255);
+  border: 2px solid var(--primary-outline-color);
+  background-color: var(--secondary-bg-color);
+  color: var(--hyperlink-color);
   border-radius: 1rem;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -349,16 +364,16 @@ a:active {
 
 .slide-right-column button:hover,
 .card button:hover {
-  box-shadow: 0 0.25rem 0 black;
-  color: white;
-  background-color: rgb(0, 85, 255);
-  border: 2px solid white;
+  box-shadow: 0 0.25rem 0 var(--primary-text-color);
+  color: var(--secondary-bg-color);
+  background-color: var(--hyperlink-color);
+  border: 2px solid var(--secondary-bg-color);
 }
 
 .slide-right-column button:active,
 .card button:active {
-  box-shadow: 0 0.05rem 0 black;
-  border: 1px solid white;
+  box-shadow: 0 0.05rem 0 var(--primary-text-color);
+  border: 1px solid var(--secondary-bg-color);
   transform: translateY(2px);
 }
 
@@ -404,7 +419,7 @@ a:active {
   nav {
     grid-template-columns: 11rem 9rem 5rem auto;
   }
-  
+
   .social-icons,
   nav .css-art {
     display: none;
@@ -413,7 +428,7 @@ a:active {
   nav a,
   nav div,
   nav p {
-    color: black;
+    color: var(--primary-text-color);
     font-size: 1rem;
   }
 
