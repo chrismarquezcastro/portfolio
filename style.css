@@ -3,6 +3,7 @@
 
 :root {
   --primary-text-color: black;
+  --text-body-color: rgb(15, 16, 17);
   --secondary-text-color: #6e7680;
   --hyperlink-color: rgb(0, 85, 255);
   --primary-bg-color: #fffefc;
@@ -16,10 +17,10 @@
 
 .fade-in {
   animation-duration: 3s;
-  animation-name: slide-in;
+  animation-name: fade-in;
 }
 
-@keyframes slide-in {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -28,18 +29,22 @@
   }
 }
 
-.delay1s {
-  animation-duration: 1s;
-  animation-name: delay-1s;
-  animation-delay: 1s;
+.slide-in-left {
+  animation-duration: 2s;
+  animation-name: slide-in-left;
 }
 
-@keyframes delay-1s {
+@keyframes slide-in-left {
   from {
+    margin-right: 100%;
+    width: 300%;
     opacity: 0;
   }
+
   to {
-    opacity: 100;
+    margin-right: 3.5%;
+    width: 100%;
+    opacity: 1;
   }
 }
 
@@ -98,9 +103,11 @@ small {
   color: var(--secondary-text-color);
 }
 
-p {
-  font-size: 1rem;
-  font-weight: 300;
+p,
+li {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-body-color);
 }
 
 a {
@@ -115,8 +122,6 @@ a:hover {
 li {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
   padding: 0.25rem 0;
   overflow-wrap: break-word;
 }
@@ -239,11 +244,15 @@ a:active {
 .cover small,
 .cover h2,
 .cover p {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .cover video {
   max-width: 800px;
+  padding: 2.5rem 1rem;
+  background-color: var(--terciary-bg-color);
+  padding: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 .avatar-signature {
@@ -338,8 +347,9 @@ a:active {
 
 .cover-vertical-video {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 2rem;
+  margin-bottom: 1rem;
 }
 
 .cover-vertical-video video {
@@ -369,8 +379,7 @@ a:active {
 }
 
 .slide-right-column img,
-.slide-right-column video,
-.cover video {
+.slide-right-column video {
   max-width: 600px;
   max-height: 600px;
   padding: 2.5rem 1rem;
@@ -402,8 +411,8 @@ a:active {
 
 .slide-right-column button:active,
 .card button:active {
-  box-shadow: 0 0.05rem 0 var(--primary-text-color);
-  border: 1px solid var(--secondary-bg-color);
+  box-shadow: 0 -0.25rem 0 var(--primary-text-color);
+  border: none;
   transform: translateY(2px);
 }
 
