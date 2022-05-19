@@ -106,7 +106,7 @@ small {
 p,
 li {
   font-size: 1.1rem;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: 400;
   color: var(--text-body-color);
 }
@@ -145,7 +145,7 @@ nav {
   display: grid;
   align-content: center;
   align-items: center;
-  grid-template-columns: 12rem 11rem 6rem auto;
+  grid-template-columns: 12rem 11rem auto;
   text-align: center;
   padding-left: 1rem;
   box-shadow: 0 1rem 1rem var(--subtle-shadow-color);
