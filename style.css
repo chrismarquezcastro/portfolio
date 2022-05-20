@@ -9,7 +9,7 @@
   --primary-bg-color: #fffefc;
   --secondary-bg-color: white;
   --terciary-bg-color: #eaedf1;
-  --border-color: rgba(0, 13, 255, 0.199);
+  --border-color: rgb(224, 225, 235);
   --subtle-shadow-color: rgba(0, 0, 0, 0.05);
   --primary-outline-color: rgb(185, 139, 255);
   --primary-highlight-color: rgb(145, 255, 139);
@@ -39,10 +39,10 @@
     margin-right: 100%;
     width: 300%;
     opacity: 0;
+    transform: scale(0.1);
   }
 
   to {
-    margin-right: 3.5%;
     width: 100%;
     opacity: 1;
   }
@@ -55,8 +55,8 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: var(--primary-bg-color);
   padding-bottom: 4rem;
+  background-color: var(--primary-bg-color);
 }
 
 hr {
@@ -74,12 +74,12 @@ li {
 }
 
 h1 {
-  font-family: "Noto Serif", serif;
-  font-size: 2.5rem;
+  font-family: masqualero, serif;
+  font-size: 3rem;
 }
 
 h2 {
-  font-family: "Noto Serif", serif;
+  font-family: masqualero, serif;
   font-size: 1.75rem;
 }
 
@@ -98,8 +98,8 @@ h4 {
 }
 
 small {
-  font-family: "Noto Serif", serif;
-  font-size: 1rem;
+  font-family: masqualero, serif;
+  font-size: 1.1rem;
   color: var(--secondary-text-color);
 }
 
@@ -319,6 +319,7 @@ a:active {
   padding: 1rem;
   background-color: var(--secondary-bg-color);
   max-width: 30rem;
+  z-index: 5;
 }
 
 .card:hover {
@@ -479,6 +480,14 @@ a:active {
 
   h1 {
     font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 
   .section {
