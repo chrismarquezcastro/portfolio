@@ -4,10 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/xoc6dlt.css" />
     <title>Chris Marquez UX Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Nav -->
+    <nav>
+      <a href="./index.html"
+        ><div class="home">
+          <img src="./images/avatar.png" alt="Chris logo" width="32px" />
+          <p>Chris Marquez</p>
+        </div></a
+      >
+      <div class="dropdown">
+        <div class="selected-nav" onclick="" aria-haspopup="true">
+          UX Case Studies <i class="fa-solid fa-caret-down"></i>
+        </div>
+
+        <div class="dropdown-content">
+          <div>
+            <a href="./confirm-security-settings.html"
+              >Admin confirms security settings</a
+            >
+          </div>
+          <div>
+            <a href="./ciso-alerts-on-mobile.html"
+              >CISO alerts for unusual activities</a
+            >
+          </div>
+          <div>
+            <p class="selected-nav">UI Components Library</p>
+          </div>
+        </div>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/chrismarquezcastro" target="_blank"
+          ><i class="fa-brands fa-github social-icon"></i
+        ></a>
+      </div>
+    </nav>
+
     <!-- Cover -->
     <div class="cover">
       <h1>UI components library for the new Admin UI and the Design System</h1>
@@ -52,6 +95,15 @@
             feel of the end user UI, given its adoption in recent years.
           </p>
         </div>
+      </div>
+      <img
+        src="./images/existing-web-end-user.png"
+        alt="Existing look and feel on the end-user web portal"
+        class="full-width"
+      />
+      <div class="foot-note">
+        Existing look and feel on the end-user web portal, to be extended and
+        documented on the components' library.
       </div>
     </div>
     <hr />
@@ -120,7 +172,7 @@
       />
       <div class="foot-note">Old Admin UI Form Components</div>
 
-      <div class="slide">
+      <div class="slide under-full-width">
         <div class="slide-left-column"></div>
         <div class="slide-right-column">
           <p>
@@ -141,16 +193,142 @@
       <div class="foot-note">
         First draft of new Admin UI components in context.
       </div>
-      <div class="slide">
+      <div class="slide under-full-width">
         <div class="slide-left-column"></div>
         <div class="slide-right-column">
           <h4>Iterations</h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum odio hic
-          voluptate voluptatem, distinctio unde deleniti ex. Id libero vero
-          ducimus inventore similique. Corporis laudantium totam labore nesciunt
-          minima nobis?
+          <p>
+            When building each component from the ground up the goal was to
+            break it down to its fundamental parts and re-use as many rules as
+            possible across components.
+          </p>
+        </div>
+      </div>
+
+      <img
+        src="./images/iteration-components-states.png"
+        alt="Iteration on basic components states"
+        class="full-width"
+      />
+      <div class="foot-note">
+        File intended to be the source of knowdege for all components in their
+        different states.
+      </div>
+
+      <div class="slide under-full-widht">
+        <div class="slide-lef-column"></div>
+        <div class="slide-right-column">
+          <p>
+            Larger components like tables were the most complicated due to its
+            many possibilities for types of data and behavior needs, e.g. Some
+            need a checkbox, while others need and expand and collapse control,
+            but all needed to display data in a table format, optimizing for
+            large amounts of data and quick access to controls.
+          </p>
+        </div>
+      </div>
+
+      <img
+        src="./images/iteration-table-behavior.png"
+        alt="Iteration on the tables scrolling behavior"
+        class="full-width"
+      />
+      <div class="foot-note">Iteration on the tables scrolling behavior.</div>
+
+      <div class="slide under-full-widht">
+        <div class="slide-left-column"></div>
+        <div class="slide-right-column">
+          <h4>Final solution</h4>
+          <p>
+            The final design is the result of the close collaboration with my
+            design teammates on every detail; from the font size, margins,
+            colors of each component to the information architecture and
+            usability across the system.
+          </p>
+        </div>
+      </div>
+
+      <img
+        src="./images/final-tables-look-and-feel.png"
+        alt="Users view with the final implementation of the scroll behavior"
+        class="full-width"
+      />
+      <div class="foot-note">
+        Users view with the final implementation of the scroll behavior
+      </div>
+
+      <div class="slide under-full-widht">
+        <div class="slide-left-column"></div>
+        <div class="slie-right-column">
+          <p>
+            The final file was an improvement on the general guidelines we were
+            using before, and it would optimize some new design needs in the
+            future.
+          </p>
+        </div>
+      </div>
+
+      <img
+        src="./images/final-ui-components-lib-xd.png"
+        alt=""
+        class="full-width"
+      />
+      <div class="foot-note">
+        Source Adobe XD file with all the component linked to the library shared
+        across the members.
+      </div>
+    </div>
+    <hr />
+
+    <!-- Reflextion -->
+    <div class="section">
+      <div class="slide">
+        <div class="slide-left-column">
+          <h3>Reflection</h3>
+        </div>
+        <div class="slide-right-column">
+          <h4>Success metrics</h4>
+          <p>
+            As Steve Jobs famously said "Real artists ship", from this
+            perspective the design and front-end teams were able to produce what
+            they needed using the components and the documentation provided.
+          </p>
+          <p>
+            The redesign of the admin was a success across the organization and
+            end-users, the library is ready to be extended to other Kiteworks
+            user interfaces.
+          </p>
+          <h4>Learnings</h4>
+          <p>
+            Creating a library of components and a design system for that matter
+            implies to think in terms of simplicity, extensibility, usability,
+            relationship with other components, different states, etc.
+          </p>
+          <p>
+            The system is a never ending project because the gaps of production
+            and communication can always be improved.
+          </p>
+          <h4>Future iterations</h4>
+          <p>
+            The combination of Adobe XD for design and Zeplin for hand out to
+            developer was not very efficient due to the need to maintain two
+            sources of truth, by the time we were finishing this roject, Figma
+            was starting to become the standard for UI design, so the team
+            looked into the migration hoping to have only one source of truth
+            for UI design, components and hand over to developers.
+          </p>
+          <p>
+            Personally I'm investing in learning Figma, specially now that the
+            latest version on May 2022 includes powerful features to reduce
+            significantly the number of versions of components like buttons,
+            toats, etc. as well as support for responsive design. Figjam is also
+            a great tool for brainstorming and documenting workflows.
+          </p>
         </div>
       </div>
     </div>
+    <hr />
+
+    <div class="section"><h2>Thank you for your time and attention!</h2></div>
   </body>
 </html>
