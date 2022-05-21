@@ -131,7 +131,6 @@ li {
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--secondary-text-color);
-  margin-top: 0.25rem;
   margin-bottom: 2.5rem;
 }
 
@@ -299,6 +298,13 @@ a:active {
   margin: 0 1rf;
 }
 
+.full-width {
+  max-width: 1000px;
+  background-color: var(--terciary-bg-color);
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
 .landing {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -313,16 +319,16 @@ a:active {
 }
 
 .card {
-  box-shadow: 0.5rem 0.5rem 0 var(--primary-text-color);
-  border: 2px solid var(--primary-text-color);
+  box-shadow: 0.5rem 0.5rem 0 0 var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
   border-radius: 1rem;
   padding: 1rem;
   background-color: var(--secondary-bg-color);
   max-width: 30rem;
-  z-index: 5;
 }
 
 .card:hover {
+  box-shadow: 1rem 1rem 0 0 var(--primary-text-color);
   transform: scale(1.1);
   transition: 0.5s;
   background-color: var(--primary-highlight-color);
@@ -385,7 +391,6 @@ a:active {
 .slide-right-column video {
   max-width: 600px;
   max-height: 600px;
-  padding: 2.5rem 1rem;
   background-color: var(--terciary-bg-color);
   padding: 0.25rem;
   border-radius: 0.5rem;
@@ -395,10 +400,11 @@ a:active {
 .card button {
   font-size: 1.1rem;
   font-weight: 500;
-  border: 2px solid var(--primary-outline-color);
+  border: 1px solid var(--primary-outline-color);
   background-color: var(--secondary-bg-color);
   color: var(--hyperlink-color);
   border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 1rem var(--primary-outline-color);
   padding: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
@@ -406,7 +412,7 @@ a:active {
 
 .slide-right-column button:hover,
 .card button:hover {
-  box-shadow: 0 0.25rem 0 var(--primary-text-color);
+  box-shadow: 0.25rem 0.25rem 0 var(--primary-text-color);
   color: var(--secondary-bg-color);
   background-color: var(--hyperlink-color);
   border: 2px solid var(--secondary-bg-color);
@@ -414,7 +420,7 @@ a:active {
 
 .slide-right-column button:active,
 .card button:active {
-  box-shadow: 0 -0.25rem 0 var(--primary-text-color);
+  box-shadow: -0.25rem -0.25rem 0 var(--primary-text-color);
   border: none;
   transform: translateY(2px);
 }
@@ -428,6 +434,10 @@ a:active {
 @media (max-width: 1000px) {
   .cover video {
     max-width: 90%;
+  }
+
+  .full-width {
+    max-width: 100%;
   }
 
   .slide {
