@@ -316,6 +316,7 @@ a:active {
 .landing-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
   gap: 0.5rem;
 }
 
@@ -325,7 +326,12 @@ a:active {
   border-radius: 1rem;
   padding: 1rem;
   background-color: var(--secondary-bg-color);
-  max-width: 30rem;
+  max-width: 40rem;
+}
+
+.wide-card {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .card:hover {
