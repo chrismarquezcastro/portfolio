@@ -453,6 +453,18 @@ a:active {
     max-width: 90%;
   }
 
+  .landing-cards {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+  }
+
+  .second-card {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
   .full-width {
     max-width: 600px;
   }
@@ -474,11 +486,6 @@ a:active {
 
   .home-cover-img img {
     width: 90%;
-  }
-
-  .landing-cards {
-    grid-template-columns: 1fr;
-    gap: 1rem;
   }
 }
 
