@@ -11,6 +11,7 @@
   --terciary-bg-color: #eaedf1;
   --border-color: rgb(224, 225, 235);
   --subtle-shadow-color: rgba(0, 0, 0, 0.05);
+  --not-subtle-shadow-color: rgba(0, 0, 0, 0.5);
   --primary-outline-color: rgb(185, 139, 255);
   --primary-highlight-color: rgb(145, 255, 139);
 }
@@ -319,6 +320,7 @@ a:active {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr auto;
   gap: 1rem;
+  margin-top: 3rem;
 }
 
 .card {
@@ -336,7 +338,7 @@ a:active {
 }
 
 .card:hover {
-  box-shadow: 1rem 1rem 0 0 var(--primary-text-color);
+  box-shadow: 1rem 1rem 0.15rem 0.5rem var(--not-subtle-shadow-color);
   transform: scale(1.1);
   transition: 0.5s;
   background-color: var(--primary-highlight-color);
