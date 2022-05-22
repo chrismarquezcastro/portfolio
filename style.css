@@ -222,12 +222,11 @@ a:active {
 }
 
 .dropdown-content div {
-  margin: 0 1rem;
+  margin: 1rem;
 }
 
 .dropdown-content a {
   line-height: 1.5;
-  transform: translateX(-4rem);
 }
 
 .dropdown:hover .dropdown-content,
