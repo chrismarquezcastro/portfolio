@@ -11,7 +11,7 @@
   --terciary-bg-color: #eaedf1;
   --border-color: rgb(224, 225, 235);
   --subtle-shadow-color: rgba(0, 0, 0, 0.05);
-  --not-subtle-shadow-color: rgba(0, 0, 0, 0.5);
+   --not-subtle-shadow-color: rgba(0, 0, 0, 0.5);
   --primary-outline-color: rgb(185, 139, 255);
   --primary-highlight-color: rgb(145, 255, 139);
 }
@@ -234,6 +234,11 @@ a:active {
 .dropdown:focus .dropdown-content {
   display: block;
   cursor: pointer;
+}
+
+.header-banner {
+  width: 100vw;
+  margin-top: 4rem;
 }
 
 .cover {
