@@ -11,7 +11,7 @@
   --terciary-bg-color: #eaedf1;
   --border-color: rgb(224, 225, 235);
   --subtle-shadow-color: rgba(0, 0, 0, 0.05);
-   --not-subtle-shadow-color: rgba(0, 0, 0, 0.5);
+  --not-subtle-shadow-color: rgba(0, 0, 0, 0.5);
   --primary-outline-color: rgb(185, 139, 255);
   --primary-highlight-color: rgb(145, 255, 139);
 }
@@ -424,11 +424,10 @@ a:active {
 .card button {
   font-size: 1.1rem;
   font-weight: 500;
-  border: 1px solid var(--primary-outline-color);
-  background-color: var(--secondary-bg-color);
-  color: var(--hyperlink-color);
+  background-color: var(--hyperlink-color);
+  color: var(--secondary-bg-color);
+  border: none;
   border-radius: 1rem;
-  box-shadow: 0.25rem 0.25rem 1rem var(--primary-outline-color);
   padding: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
@@ -436,15 +435,14 @@ a:active {
 
 .slide-right-column button:hover,
 .card button:hover {
-  box-shadow: 0.25rem 0.25rem 0 var(--primary-text-color);
+  box-shadow: 0 0 1rem var(--hyperlink-color);
   color: var(--secondary-bg-color);
   background-color: var(--hyperlink-color);
-  border: 2px solid var(--secondary-bg-color);
 }
 
 .slide-right-column button:active,
 .card button:active {
-  box-shadow: -0.25rem -0.25rem 0 var(--primary-text-color);
+  box-shadow: 0 0 0.1rem var(--hyperlink-color);
   border: none;
   transform: translateY(2px);
 }
