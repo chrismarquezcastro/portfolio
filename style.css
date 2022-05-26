@@ -343,7 +343,7 @@ a:active {
 }
 
 .card:hover {
-  box-shadow: 1rem 1rem 0.15rem 0.5rem var(--not-subtle-shadow-color);
+  box-shadow: 1rem 1rem 0.75rem 0.5rem var(--not-subtle-shadow-color);
   transform: scale(1.1);
   transition: 0.5s;
   background-color: var(--primary-highlight-color);
