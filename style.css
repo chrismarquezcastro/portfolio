@@ -439,6 +439,7 @@ a:active {
   box-shadow: 0 0 1rem var(--hyperlink-color);
   color: var(--secondary-bg-color);
   background-color: var(--hyperlink-color);
+  transform: translateY(-2px);
 }
 
 .slide-right-column button:active,
