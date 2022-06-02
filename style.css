@@ -503,14 +503,6 @@ nav li:nth-of-type(4) {
   grid-column-end: 3;
 }
 
-.card:hover {
-  box-shadow: 1rem 1rem 0.75rem 0.5rem var(--not-subtle-shadow-color);
-  transform: scale(1.1);
-  transition: 0.5s;
-  background-color: var(--primary-highlight-color);
-  border: none;
-}
-
 .card .foot-note {
   margin: 0;
 }
