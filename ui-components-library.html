@@ -11,44 +11,41 @@
     />
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/xoc6dlt.css" />
-    <title>Chris Marquez UX Portfolio</title>
+    <title>Chris UX Studio</title>
     <link rel="icon" type="image/x-icon" href="/images/avatar.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Nav -->
-    <nav>
-      <a href="./index.html"
-        ><div class="home">
-          <img src="./images/avatar.png" alt="Chris logo" width="32px" />
-          <p>Chris Marquez</p>
-        </div></a
-      >
-      <div class="dropdown">
-        <div class="selected-nav" onclick="" aria-haspopup="true">
-          UX Case Studies <i class="fa-solid fa-caret-down"></i>
-        </div>
+    <!-- Overlay menu -->
+    <div class="overlay overlay-slide-left" id="overlay">
+      <!-- Menu items -->
+      <nav>
+        <ul>
+          <li id="nav-1" class="slide-out-1">
+            <a href="./index.html#home">Home</a>
+          </li>
+          <li id="nav-2" class="slide-out-2">
+            <a href="./index.html#about">About</a>
+          </li>
+          <li id="nav-3" class="slide-out-3">
+            <a href="./index.html#ux-case-studies">UX Case Studies</a>
+          </li>
+          <li id="nav-4" class="slide-out-4">
+            <a href="./index.html#ui-and-visual-design">UI & Visual Design</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-        <div class="dropdown-content">
-          <div>
-            <a href="./confirm-security-settings.html"
-              >Admin confirms security settings</a
-            >
-          </div>
-          <div>
-            <a href="./ciso-alerts-on-mobile.html">CISO alerts for anomalies</a>
-          </div>
-          <div>
-            <p class="selected-nav">UI components library</p>
-          </div>
-        </div>
+    <div class="nav-and-logo">
+      <!-- Menu bars -->
+      <div class="menu-bars" id="menu-bars">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-      <div class="social-icons">
-        <a href="https://github.com/chrismarquezcastro" target="_blank"
-          ><i class="fa-brands fa-github social-icon"></i
-        ></a>
-      </div>
-    </nav>
+      <p class="chris-studio-logo">Chris UX Studio</p>
+    </div>
 
     <!-- Header image -->
     <img
@@ -57,286 +54,301 @@
       class="header-banner"
     />
 
-    <!-- Cover -->
-    <div class="cover">
-      <h1>UI components library for the new admin app and the design system</h1>
-      <small>Kiteworks | Q4 – 2021 | Palo Alto, California</small>
+    <!-- Page container -->
+    <div class="project-container">
+      <div class="project-contents">
+        <!-- Cover -->
+        <div class="cover">
+          <h1>UI components library for the new admin app and design system</h1>
+          <small>Kiteworks | Q4 – 2021 | Palo Alto, California</small>
+        </div>
+
+        <!-- Framing -->
+        <div class="section">
+          <div class="slide">
+            <div class="slide-left-column"><h3>Framing</h3></div>
+            <div class="slide-right-column">
+              <h4 class="first-title-of-section">
+                Identify user / business needs
+              </h4>
+              <p>
+                Designers needed a library of UI components to be reused
+                whenever they wanted to design for a workflow. The UI components
+                should also be easy to update.
+              </p>
+              <p>
+                Developers needed a library of UI components in all their states
+                to build an exact replica, so that any component can be reused
+                thoughout the product graphical user interfaces.
+              </p>
+              <p>
+                The branding guidelines have been recently updated, and the
+                product look and feel should leverage those guidelines.
+              </p>
+              <h4>Product definition</h4>
+              <p>
+                Kiteworks is a white-label B2B platform that can be partially
+                re-branded without affecting accessibility. Being a white-label
+                product implies the neutrality and simplicity to harmonize with
+                any brand look and feel or be used out of the box without
+                customization.
+              </p>
+              <p>
+                A project to improve the user experience of the admin console
+                will serve as the first product to be built using the new UI
+                components' library. The goal is to analyze every detail to
+                optimize the look and feel of each and, as a result, the overall
+                style of the library.
+              </p>
+              <p>
+                The components design will be leveraged from the existing look
+                and feel of the end-user UI, given its adoption in recent years.
+              </p>
+            </div>
+          </div>
+          <img
+            src="./images/existing-web-end-user.png"
+            alt="Existing look and feel on the end-user web portal"
+            class="full-width"
+          />
+          <div class="foot-note">
+            Existing look and feel on the end-user web portal, to be extended
+            and documented on the components' library.
+          </div>
+        </div>
+
+        <!-- Process -->
+        <div class="section">
+          <div class="slide">
+            <div class="slide-left-column">
+              <h3>Process</h3>
+            </div>
+            <div class="slide-right-column">
+              <h4 class="first-title-of-section">Brainstorm</h4>
+              <p>
+                The design and development teams met a few of times to express
+                their needs and ideas to approach the solution using different
+                tools or styles.
+              </p>
+              <p>
+                The design team decided to use the Adobe XD components design
+                features to produce all the different states and compose the new
+                admin pages. To store the library and enable the developers to
+                inspect them for implementation details, the team decided to
+                continue using Zeplin.
+              </p>
+              <h4>Team alignment</h4>
+              <p>
+                The teams agreed to buy a React template with basic pages and
+                components included as a baseline to adapt to the new style and
+                custom components.
+              </p>
+              <p>
+                The design team frequently met with the front-end team to ensure
+                the progress met everyone's needs when designing and building
+                different kinds of pages.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design -->
+        <div class="section">
+          <div class="slide">
+            <div class="slide-left-column">
+              <h3>Design</h3>
+            </div>
+            <div class="slide-right-column">
+              <h4 class="first-title-of-section">Explorations</h4>
+              <p>
+                The first step I took was to capture screenshots of each page of
+                the Admin UI to identify all the different kinds of UI
+                components used throughout the Admin UI in context.
+              </p>
+              <p>
+                The engineering team had a plan to start with the form type of
+                components. Therefore, I focus on developing those first and
+                then the tables.
+              </p>
+            </div>
+          </div>
+
+          <img
+            class="full-width"
+            src="./images/old-admin-ui-form-components.png"
+            alt="Old Admin UI Form Components"
+          />
+          <div class="foot-note">Old admin UI form components</div>
+
+          <div class="slide under-full-width">
+            <div class="slide-left-column"></div>
+            <div class="slide-right-column">
+              <p>
+                The first draft of the components was a replica of the original
+                layout, only replacing the UI components for the new look and
+                feel and minor improvements in the behavior throughout its
+                states. The goal was to validate that the component's unique
+                styles would work well together.
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="./images/exploration-admin-ui-form-components.png"
+            alt="Exploration of Admin UI form components."
+            class="full-width"
+          />
+          <div class="foot-note">
+            First draft of new admin UI components in context.
+          </div>
+          <div class="slide under-full-width">
+            <div class="slide-left-column"></div>
+            <div class="slide-right-column">
+              <h4>Iterations</h4>
+              <p>
+                When building each component from the ground up, the goal was to
+                break it down to its fundamental parts and reuse as many rules
+                across segments.
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="./images/iteration-components-states.png"
+            alt="Iteration on basic components states"
+            class="full-width"
+          />
+          <div class="foot-note">
+            File intended to be the source of knowdege for all components in
+            their different states.
+          </div>
+
+          <div class="slide under-full-widht">
+            <div class="slide-lef-column"></div>
+            <div class="slide-right-column">
+              <p>
+                More elaborated components like tables were the most complicated
+                due to their many possibilities for types of data and behavior
+                needs, e.g., Some need a checkbox. In contrast, others need to
+                expand and collapse control, but all are required to display
+                data in a table format, optimizing for large amounts of data and
+                quick access to controls.
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="./images/iteration-table-behavior.png"
+            alt="Iteration on the tables scrolling behavior"
+            class="full-width"
+          />
+          <div class="foot-note">
+            Iteration on the tables scrolling behavior.
+          </div>
+
+          <div class="slide under-full-widht">
+            <div class="slide-left-column"></div>
+            <div class="slide-right-column">
+              <h4>Final solution</h4>
+              <p>
+                The final design results from the close collaboration with my
+                design teammates on every detail, from the font size, margins,
+                and colors of each component to the information architecture and
+                usability across the system.
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="./images/final-tables-look-and-feel.png"
+            alt="Users view with the final implementation of the scroll behavior"
+            class="full-width"
+          />
+          <div class="foot-note">
+            Users view with the final implementation of the scroll behavior.
+          </div>
+
+          <div class="slide under-full-widht">
+            <div class="slide-left-column"></div>
+            <div class="slide-right-column">
+              <p>
+                The final file improved the general guidelines we were using
+                before, and it would optimize some new design needs in the
+                future.
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="./images/final-ui-components-lib-xd.png"
+            alt=""
+            class="full-width"
+          />
+          <div class="foot-note">
+            Source Adobe XD file with all the component linked to the library
+            shared across the members.
+          </div>
+        </div>
+
+        <!-- Reflextion -->
+        <div class="section">
+          <div class="slide">
+            <div class="slide-left-column">
+              <h3>Reflection</h3>
+            </div>
+            <div class="slide-right-column">
+              <h4 class="first-title-of-section">Success metrics</h4>
+              <p>
+                As Steve Jobs famously said, "Real artists ship" from this
+                perspective, the design and front-end teams were enabled to
+                produce what they needed using the components and the
+                documentation provided.
+              </p>
+              <p>
+                The admin UI redesign was a success across the organization and
+                end-users; the library is ready to be extended to other
+                Kiteworks user interfaces.
+              </p>
+              <h4>Learnings</h4>
+              <p>
+                Creating a library of components and a design system, for that
+                matter, implies thinking in terms of simplicity, extensibility,
+                usability, relationship with other elements, different states,
+                etc.
+              </p>
+              <p>
+                The system is a never-ending project because the gaps in
+                production and communication can constantly be improved.
+              </p>
+              <h4>Future iterations</h4>
+              <p>
+                The combination of Adobe XD for design and Zeplin for a handout
+                to a developer was not very efficient due to the need to
+                maintain two sources of truth. By the time we finished this
+                project, Figma was starting to become the standard for UI
+                design, so the team looked into the migration hoping to have
+                only one source of truth for UI design and components and
+                handing it over to developers.
+              </p>
+              <p>
+                I'm investing in learning Figma, especially now that the latest
+                version in May 2022 includes powerful features to significantly
+                reduce the number of versions of components like buttons, toats,
+                etc. and support for responsive design. Figjam is also an
+                excellent tool for brainstorming and documenting workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thank you! -->
+        <div class="section">
+          <h2>Thank you for your time and attention!</h2>
+        </div>
+      </div>
     </div>
-    <hr />
 
-    <!-- Framing -->
-    <div class="section">
-      <div class="slide">
-        <div class="slide-left-column"><h3>Framing</h3></div>
-        <div class="slide-right-column">
-          <h4>Identify user / business needs</h4>
-          <p>
-            Designers needed a library of UI components to be reused whenever
-            they wanted to design for a workflow. The UI components should also
-            be easy to update.
-          </p>
-          <p>
-            Developers needed a library of UI components in all their states to
-            build an exact replica, so that any component can be reused
-            thoughout the product graphical user interfaces.
-          </p>
-          <p>
-            The branding guidelines have been recently updated, and the product
-            look and feel should leverage those guidelines.
-          </p>
-          <h4>Product definition</h4>
-          <p>
-            Kiteworks is a white-label B2B platform that can be partially
-            re-branded without affecting accessibility. Being a white-label
-            product implies the neutrality and simplicity to harmonize with any
-            brand look and feel or be used out of the box without customization.
-          </p>
-          <p>
-            A project to improve the user experience of the admin console will
-            serve as the first product to be built using the new UI components'
-            library. The goal is to analyze every detail to optimize the look
-            and feel of each and, as a result, the overall style of the library.
-          </p>
-          <p>
-            The components design will be leveraged from the existing look and
-            feel of the end-user UI, given its adoption in recent years.
-          </p>
-        </div>
-      </div>
-      <img
-        src="./images/existing-web-end-user.png"
-        alt="Existing look and feel on the end-user web portal"
-        class="full-width"
-      />
-      <div class="foot-note">
-        Existing look and feel on the end-user web portal, to be extended and
-        documented on the components' library.
-      </div>
-    </div>
-    <hr />
-
-    <!-- Process -->
-    <div class="section">
-      <div class="slide">
-        <div class="slide-left-column">
-          <h3>Process</h3>
-        </div>
-        <div class="slide-right-column">
-          <h4>Brainstorm</h4>
-          <p>
-            The design and development teams met a few of times to express their
-            needs and ideas to approach the solution using different tools or
-            styles.
-          </p>
-          <p>
-            The design team decided to use the Adobe XD components design
-            features to produce all the different states and compose the new
-            admin pages. To store the library and enable the developers to
-            inspect them for implementation details, the team decided to
-            continue using Zeplin.
-          </p>
-          <h4>Team alignment</h4>
-          <p>
-            The teams agreed to buy a React template with basic pages and
-            components included as a baseline to adapt to the new style and
-            custom components.
-          </p>
-          <p>
-            The design team frequently met with the front-end team to ensure the
-            progress met everyone's needs when designing and building different
-            kinds of pages.
-          </p>
-        </div>
-      </div>
-    </div>
-    <hr />
-
-    <!-- Design -->
-    <div class="section">
-      <div class="slide">
-        <div class="slide-left-column">
-          <h3>Design</h3>
-        </div>
-        <div class="slide-right-column">
-          <h4>Explorations</h4>
-          <p>
-            The first step I took was to capture screenshots of each page of the
-            Admin UI to identify all the different kinds of UI components used
-            throughout the Admin UI in context.
-          </p>
-          <p>
-            The engineering team had a plan to start with the form type of
-            components. Therefore, I focus on developing those first and then
-            the tables.
-          </p>
-        </div>
-      </div>
-
-      <img
-        class="full-width"
-        src="./images/old-admin-ui-form-components.png"
-        alt="Old Admin UI Form Components"
-      />
-      <div class="foot-note">Old admin UI form components</div>
-
-      <div class="slide under-full-width">
-        <div class="slide-left-column"></div>
-        <div class="slide-right-column">
-          <p>
-            The first draft of the components was a replica of the original
-            layout, only replacing the UI components for the new look and feel
-            and minor improvements in the behavior throughout its states. The
-            goal was to validate that the component's unique styles would work
-            well together.
-          </p>
-        </div>
-      </div>
-
-      <img
-        src="./images/exploration-admin-ui-form-components.png"
-        alt="Exploration of Admin UI form components."
-        class="full-width"
-      />
-      <div class="foot-note">
-        First draft of new admin UI components in context.
-      </div>
-      <div class="slide under-full-width">
-        <div class="slide-left-column"></div>
-        <div class="slide-right-column">
-          <h4>Iterations</h4>
-          <p>
-            When building each component from the ground up, the goal was to
-            break it down to its fundamental parts and reuse as many rules
-            across segments.
-          </p>
-        </div>
-      </div>
-
-      <img
-        src="./images/iteration-components-states.png"
-        alt="Iteration on basic components states"
-        class="full-width"
-      />
-      <div class="foot-note">
-        File intended to be the source of knowdege for all components in their
-        different states.
-      </div>
-
-      <div class="slide under-full-widht">
-        <div class="slide-lef-column"></div>
-        <div class="slide-right-column">
-          <p>
-            More elaborated components like tables were the most complicated due
-            to their many possibilities for types of data and behavior needs,
-            e.g., Some need a checkbox. In contrast, others need to expand and
-            collapse control, but all are required to display data in a table
-            format, optimizing for large amounts of data and quick access to
-            controls.
-          </p>
-        </div>
-      </div>
-
-      <img
-        src="./images/iteration-table-behavior.png"
-        alt="Iteration on the tables scrolling behavior"
-        class="full-width"
-      />
-      <div class="foot-note">Iteration on the tables scrolling behavior.</div>
-
-      <div class="slide under-full-widht">
-        <div class="slide-left-column"></div>
-        <div class="slide-right-column">
-          <h4>Final solution</h4>
-          <p>
-            The final design results from the close collaboration with my design
-            teammates on every detail, from the font size, margins, and colors
-            of each component to the information architecture and usability
-            across the system.
-          </p>
-        </div>
-      </div>
-
-      <img
-        src="./images/final-tables-look-and-feel.png"
-        alt="Users view with the final implementation of the scroll behavior"
-        class="full-width"
-      />
-      <div class="foot-note">
-        Users view with the final implementation of the scroll behavior.
-      </div>
-
-      <div class="slide under-full-widht">
-        <div class="slide-left-column"></div>
-        <div class="slie-right-column">
-          <p>
-            The final file improved the general guidelines we were using before,
-            and it would optimize some new design needs in the future.
-          </p>
-        </div>
-      </div>
-
-      <img
-        src="./images/final-ui-components-lib-xd.png"
-        alt=""
-        class="full-width"
-      />
-      <div class="foot-note">
-        Source Adobe XD file with all the component linked to the library shared
-        across the members.
-      </div>
-    </div>
-    <hr />
-
-    <!-- Reflextion -->
-    <div class="section">
-      <div class="slide">
-        <div class="slide-left-column">
-          <h3>Reflection</h3>
-        </div>
-        <div class="slide-right-column">
-          <h4>Success metrics</h4>
-          <p>
-            As Steve Jobs famously said, "Real artists ship" from this
-            perspective, the design and front-end teams were enabled to produce
-            what they needed using the components and the documentation
-            provided.
-          </p>
-          <p>
-            The admin UI redesign was a success across the organization and
-            end-users; the library is ready to be extended to other Kiteworks
-            user interfaces.
-          </p>
-          <h4>Learnings</h4>
-          <p>
-            Creating a library of components and a design system, for that
-            matter, implies thinking in terms of simplicity, extensibility,
-            usability, relationship with other elements, different states, etc.
-          </p>
-          <p>
-            The system is a never-ending project because the gaps in production
-            and communication can constantly be improved.
-          </p>
-          <h4>Future iterations</h4>
-          <p>
-            The combination of Adobe XD for design and Zeplin for a handout to a
-            developer was not very efficient due to the need to maintain two
-            sources of truth. By the time we finished this project, Figma was
-            starting to become the standard for UI design, so the team looked
-            into the migration hoping to have only one source of truth for UI
-            design and components and handing it over to developers.
-          </p>
-          <p>
-            I'm investing in learning Figma, especially now that the latest
-            version in May 2022 includes powerful features to significantly
-            reduce the number of versions of components like buttons, toats,
-            etc. and support for responsive design. Figjam is also an excellent
-            tool for brainstorming and documenting workflows.
-          </p>
-        </div>
-      </div>
-    </div>
-    <hr />
-
-    <div class="section"><h2>Thank you for your time and attention!</h2></div>
+    <!-- Script -->
+    <script src="script.js"></script>
   </body>
 </html>

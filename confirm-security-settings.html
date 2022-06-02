@@ -4,388 +4,396 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/xoc6dlt.css" />
     <title>Chris Marquez UX Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/images/avatar.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Nav -->
-    <nav>
-      <a href="./index.html"
-        ><div class="home">
-          <img src="./images/avatar.png" alt="Chris logo" width="32px" />
-          <p>Chris Marquez</p>
-        </div></a
-      >
-      <div class="dropdown">
-        <div aria-haspopup="true" onclick="" class="selected-nav">
-          UX Case Studies <i class="fa-solid fa-caret-down"></i>
+    <!-- Overlay menu -->
+    <div class="overlay overlay-slide-left" id="overlay">
+      <!-- Menu items -->
+      <nav>
+        <ul>
+          <li id="nav-1" class="slide-out-1">
+            <a href="./index.html#home">Home</a>
+          </li>
+          <li id="nav-2" class="slide-out-2">
+            <a href="./index.html#about">About</a>
+          </li>
+          <li id="nav-3" class="slide-out-3">
+            <a href="./index.html#ux-case-studies">UX Case Studies</a>
+          </li>
+          <li id="nav-4" class="slide-out-4">
+            <a href="./index.html#ui-and-visual-design">UI & Visual Design</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav-and-logo">
+      <!-- Menu bars -->
+      <div class="menu-bars" id="menu-bars">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <p class="chris-studio-logo">Chris UX Studio</p>
+    </div>
+
+    <!-- Page container -->
+    <div class="project-container">
+      <div class="project-contents">
+        <!-- Cover -->
+        <div class="cover">
+          <h1>
+            Kiteworks reduced its security exposure by enabling customers to
+            reduce theirs
+          </h1>
+          <video src="./videos/review-security-settings.mp4" controls></video>
+          <p>
+            Around 80% of impacted customers engaged with the new UX workflow,
+            they either changed or confirm the settings, the rest of the
+            customers were migrated by the support team.
+          </p>
+          <small>Kiteworks | Q2 – 2021 | Palo Alto, California</small>
         </div>
-        <div class="dropdown-content">
-          <div>
-            <p class="selected-nav">Admin confirms security settings</p>
+
+        <!-- Framing -->
+        <div class="section">
+          <div class="slide">
+            <div class="slide-left-column"><h3>Framing</h3></div>
+            <div class="slide-right-column">
+              <h4 class="first-title-of-section">Identify user / business needs</h4>
+              <p>
+                The primary motivation was to protect the Kiteworks organization
+                from its customers' opening risk exposure due to
+                misunderstanding specific security features, which meant that it
+                was a high priority for the CEO, VP of product, and company
+                stockholders.
+              </p>
+              <p>
+                Customers who were using features in a way that could be
+                impacted needed to know about it to either change or confirm the
+                security settings.
+              </p>
+              <h4>Product definition</h4>
+              <p>
+                Framework to inform admins about security settings that could
+                impact the risk exposure of their system, including an overlay
+                wizard to guide the user over the list of settings and an email
+                campaign to inform ahead of time, and when one of the admins
+                confirms a security setting.
+              </p>
+            </div>
           </div>
-          <div>
-            <a href="./ciso-alerts-on-mobile.html">CISO alerts for anomalies</a>
+        </div>
+
+        <!-- Process -->
+        <div class="section">
+          <div class="slide">
+            <div class="slide-left-column">
+              <h3>Process</h3>
+            </div>
+            <div class="slide-right-column">
+              <!-- Brainstorming -->
+              <h4 class="first-title-of-section">Brainstorming</h4>
+              <p>
+                During the initial brainstorming sessions, the team agreed on
+                the overall interaction model of the wizard that uses an overlay
+                dialog to enable the user to complete specific tasks.
+              </p>
+              <p>
+                Early on the project, we didn't know the exact settings that
+                were going to be targeted; however, the requirement from the
+                beginning was to create a framework that could contain different
+                levels of risk based on the
+                <a href="https://nvd.nist.gov/vuln-metrics/cvss" target="_blank"
+                  >Common Vulnerability Scoring System</a
+                >
+                referenced by the Kiteworks security team when reviwing each
+                setting in detail.
+              </p>
+              <p>
+                Later on, the requirements expanded to include an email campaign
+                that would prepare the targeted admins ahead of time, guide them
+                once it was available, and share the information among relevant
+                admins within each organization.
+              </p>
+
+              <!-- User research -->
+              <h4>User research</h4>
+              <p>
+                We identified the customers that were going to be impacted to
+                reach out to a handful we already had a cooperation
+                relationship, we initially focused on understanding their
+                specific motivations to use the settings in that way.
+              </p>
+
+              <!-- Problem / Solution validation -->
+              <h4>Problem / Solution validation</h4>
+              <p>
+                Once we had a prototype, we met again with the same group of
+                admins to test the prototype and get their feedback. The goal
+                was to identify wheter they think the workflow too aggrasive, if
+                they can understand what's expected from them, and if something
+                they expected was missing. We met a couple more times after that
+                before the release to test over the iterations and the further
+                extensions like the email campaign.
+              </p>
+
+              <!-- Team alignment -->
+              <h4>Team alignment</h4>
+              <p>
+                I held multiple meetings depending on the stage of the project,
+                with multiple memebers of different teams; once in a while, I
+                would bring the larger group to inform the progress and discuss
+                contradictory opinions from stake-holders. The majority of the
+                sessions were with the relevant people in smaller groups.
+              </p>
+            </div>
           </div>
-          <div>
-            <a href="./ui-components-library.html">UI components library</a>
+        </div>
+
+        <!-- Design -->
+        <div class="section">
+          <div class="slide">
+            <div class="slide-left-column">
+              <h3>Design</h3>
+            </div>
+            <div class="slide-right-column">
+              <h4 class="first-title-of-section">Explorations</h4>
+              <p>
+                The first version of the prototype showcased the wizard model
+                with a couple of different levels of risk associated with two
+                distinct settings.
+              </p>
+              <img
+                src="./images/iteration-on-wizard-0.png"
+                alt="First version of prototype."
+              />
+              <p class="foot-note">First version of prototype.</p>
+              <p>
+                One of the interactions that required multiple iterations was
+                around the process of confirming a security setting. The goals
+                were:
+              </p>
+              <ul>
+                <li>
+                  Present succinct information so that admins can make an
+                  informed security decision.
+                </li>
+                <li>
+                  Confirm the identity of the admin who interacted with the
+                  security setting.
+                </li>
+                <li>
+                  Create friction that ensures that the admin is concious of the
+                  changes applied.
+                </li>
+              </ul>
+              <img
+                src="./images/confirm-typing-password.png"
+                alt="Early version of confirmation method using password."
+              />
+              <p class="foot-note">
+                Early version of confirmation method using password.
+              </p>
+              <p>
+                One early concept explored was, forcing the admin to confirm the
+                decisdion by entering their password; this was dismissed as
+                something too aggresive and not necessary from the security
+                perspective.
+              </p>
+
+              <h4>Iterations</h4>
+              <p>
+                The majority of the iterations happened on the wizard
+                interaction model and the copy writting; we started with a model
+                of multiple levels of risk displayed at once and ended focusing
+                only on 4 settings, all very high-risk.
+              </p>
+              <p>
+                The first few iterations focused only on the wizard approach;
+                all the components created were new and unique to the wizard.
+              </p>
+              <img
+                src="./images/iteration-on-wizard-1.png"
+                alt="Wizard accordion without reference to existing UI."
+              />
+              <p class="foot-note">
+                Wizard accordion without reference to existing UI.
+              </p>
+              <p>
+                The first release of this feature focused on high-risk settings
+                only; therefore, we only presented one group of settings at high
+                risk and prioritized them top to bottom depending on their
+                score. Another early idea was to add contextual information
+                boxes next to sensitive settings even if they were not activated
+                so that admins could learn about the best practices.
+              </p>
+              <img
+                src="./images/iteration-on-wizard-2.png"
+                alt="Accordion with information boxes in context."
+              />
+              <p class="foot-note">
+                Accordion with information boxes in context.
+              </p>
+              <p>
+                We had some versions where the grouping of the settings would
+                simplify one view but overcomplicate others; this version shows
+                a badge to recognize the number of settings under each line.
+              </p>
+              <img
+                src="./images/iteration-on-wizard-3.png"
+                alt="List of security settings grouped by type."
+              />
+              <p class="foot-note">
+                List of security settings grouped by type.
+              </p>
+              <p>
+                When the admin navigates into a group of settings, the accordion
+                will allow displaying one versus the other, and when one is
+                completed, it disappears from the wizard.
+              </p>
+              <img
+                src="./images/iteration-on-wizard-4.png"
+                alt="Accordion with warning boxes in context."
+              />
+              <p class="foot-note">Accordion with warning boxes in context.</p>
+              <h4>Final solution</h4>
+              <p>
+                The wizard landing page explains to the admin the list of
+                settings that need attention, shows the context of each setting
+                and allows for interaction on a single setting basis so that the
+                confirmation log is per setting.
+              </p>
+              <img
+                src="./images/final-wizard-list.png"
+                alt="Final wizard top page for list of security settings."
+              />
+              <p class="foot-note">
+                Final wizard top page for list of security settings.
+              </p>
+              <p>
+                Admins can take two paths on each security setting. They can
+                either change the setting to disengage the risk and save, or
+                they can go through the process of confirming the risk, by
+                navigating over multiple friction points to make sure the admin
+                understands what's happening.
+              </p>
+              <img
+                src="./images/final-change-setting.png"
+                alt="Change settings. Setting details without warnig boxes."
+              />
+              <p class="foot-note">
+                Change settings. Setting details without warnig boxes.
+              </p>
+              <img
+                src="./images/final-confirm-setting.png"
+                alt="Confirm risk. Setting details with overlay checkboxes."
+              />
+              <p class="foot-note">
+                Confirm risk. Setting details with overlay checkboxes.
+              </p>
+              <p>
+                When the admin dismisses the wizard, information is presented to
+                put some time pressure on the interaction, stressing the urgency
+                of this matter.
+              </p>
+              <img
+                src="./images/final-remind-later.png"
+                alt="Modal asking the admin to confirm that wants to exit the wizard."
+              />
+              <p class="foot-note">
+                Modal asking the admin to confirm that wants to exit the wizard.
+              </p>
+              <p>
+                The same components created in wizard context were also extended
+                to the pages where each setting is located; this allows the
+                admin to confirm the setting from the context that she is
+                familiar with.
+              </p>
+              <img
+                src="./images/final-inline-access.png"
+                alt="Inline setting page new interaction to change or confirm security settings."
+              />
+              <p class="foot-note">
+                Inline setting page new interaction to change or confirm
+                security settings.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="social-icons">
-        <a href="https://github.com/chrismarquezcastro" target="_blank"
-          ><i class="fa-brands fa-github social-icon"></i
-        ></a>
-      </div>
-    </nav>
 
-    <!-- Cover -->
-    <div class="cover">
-      <h1>
-        Kiteworks reduced its security exposure by enabling customers to reduce
-        theirs
-      </h1>
-      <video src="./videos/review-security-settings.mp4" controls></video>
-      <p>
-        Around 80% of impacted customers engaged with the new UX workflow, they
-        either changed or confirm the settings, the rest of the customers were
-        migrated by the support team.
-      </p>
-      <small>Kiteworks | Q2 – 2021 | Palo Alto, California</small>
-    </div>
+        <!-- Reflection -->
+        <div class="section">
+          <div class="slide">
+            <div class="slide-left-column">
+              <h3>Reflection</h3>
+            </div>
+            <div class="slide-right-column">
+              <h4 class="first-title-of-section">Success metrics</h4>
+              <p>
+                More than 80% of customers engaged with the interaction and
+                completed the workflow; this caused a minimal impact on the
+                customer support organization, and as planned a customer support
+                representative helped the remaining customers.
+              </p>
+              <p>
+                There are fewer customers out there with potential security
+                exposures, and for those remaining now, there is a record of
+                someone manually confirming the setting in case of a dispute.
+              </p>
+              <h4>Learnings</h4>
+              <p>
+                I learned new cybersecurity concepts and implications; I was
+                able to bring a large group of people together on a high-stake
+                project to deliver on time.
+              </p>
+              <p>
+                As a team, we developed the beginning of a framework to educate
+                the admin about the system's set up so that it is protected. We
+                were able to start the library of components for the design
+                system, and the first set of those components is applied to this
+                UI.
+              </p>
+              <h4>Future iterations</h4>
+              <p>
+                The new interaction model used by the wizard could be used for
+                any other that required immediate and focused attention from the
+                admin; at the same time, while working on the security feature,
+                the same stakeholders pushed for the implementation of the
+                "What's new! modal to inform admins about the recently installed
+                version."
+              </p>
+              <img src="./images/what-is-new.png" alt="What's new modal." />
+              <p class="foot-note">What's new modal.</p>
+              <p>
+                In a future release, a new project to update contacts from the
+                customer used the same interaction and wizard screen.
+              </p>
+              <img
+                src="./images/confirm-advisory-contacts.png"
+                alt="Update contacts form."
+              />
+              <p class="foot-note">Update contacts form.</p>
+            </div>
+          </div>
+        </div>
 
-    <!-- Quetzal -->
-    <div class="section slide-in-left">
-      <img
-        class="quetzal"
-        src="./images/quetzal.png"
-        alt="Quetzal Illustration"
-      />
-    </div>
-
-    <!-- Framing -->
-    <div class="section">
-      <div class="slide">
-        <div class="slide-left-column"><h3>Framing</h3></div>
-        <div class="slide-right-column">
-          <h4>Identify user / business needs</h4>
-          <p>
-            The primary motivation was to protect the Kiteworks organization
-            from its customers' opening risk exposure due to misunderstanding
-            specific security features, which meant that it was a high priority
-            for the CEO, VP of product, and company stockholders.
-          </p>
-          <p>
-            Customers who were using features in a way that could be impacted
-            needed to know about it to either change or confirm the security
-            settings.
-          </p>
-          <h4>Product definition</h4>
-          <p>
-            Framework to inform admins about security settings that could impact
-            the risk exposure of their system, including an overlay wizard to
-            guide the user over the list of settings and an email campaign to
-            inform ahead of time, and when one of the admins confirms a security
-            setting.
-          </p>
+        <!-- Thank you -->
+        <div class="section">
+          <h2>Thank you for your time and attention!</h2>
         </div>
       </div>
     </div>
-    <hr />
-
-    <!-- Process -->
-    <div class="section">
-      <div class="slide">
-        <div class="slide-left-column">
-          <h3>Process</h3>
-        </div>
-        <div class="slide-right-column">
-          <!-- Brainstorming -->
-          <h4>Brainstorming</h4>
-          <p>
-            During the initial brainstorming sessions, the team agreed on the
-            overall interaction model of the wizard that uses an overlay dialog
-            to enable the user to complete specific tasks.
-          </p>
-          <p>
-            Early on the project, we didn't know the exact settings that were
-            going to be targeted; however, the requirement from the beginning
-            was to create a framework that could contain different levels of
-            risk based on the
-            <a href="https://nvd.nist.gov/vuln-metrics/cvss" target="_blank"
-              >Common Vulnerability Scoring System</a
-            >
-            referenced by the Kiteworks security team when reviwing each setting
-            in detail.
-          </p>
-          <p>
-            Later on, the requirements expanded to include an email campaign
-            that would prepare the targeted admins ahead of time, guide them
-            once it was available, and share the information among relevant
-            admins within each organization.
-          </p>
-
-          <!-- User research -->
-          <h4>User research</h4>
-          <p>
-            We identified the customers that were going to be impacted to reach
-            out to a handful we already had a cooperation relationship, we
-            initially focused on understanding their specific motivations to use
-            the settings in that way.
-          </p>
-
-          <!-- Problem / Solution validation -->
-          <h4>Problem / Solution validation</h4>
-          <p>
-            Once we had a prototype, we met again with the same group of admins
-            to test the prototype and get their feedback. The goal was to
-            identify wheter they think the workflow too aggrasive, if they can
-            understand what's expected from them, and if something they expected
-            was missing. We met a couple more times after that before the
-            release to test over the iterations and the further extensions like
-            the email campaign.
-          </p>
-
-          <!-- Team alignment -->
-          <h4>Team alignment</h4>
-          <p>
-            I held multiple meetings depending on the stage of the project, with
-            multiple memebers of different teams; once in a while, I would bring
-            the larger group to inform the progress and discuss contradictory
-            opinions from stake-holders. The majority of the sessions were with
-            the relevant people in smaller groups.
-          </p>
-        </div>
-      </div>
-    </div>
-    <hr />
-
-    <!-- Design -->
-    <div class="section">
-      <div class="slide">
-        <div class="slide-left-column">
-          <h3>Design</h3>
-        </div>
-        <div class="slide-right-column">
-          <h4>Explorations</h4>
-          <p>
-            The first version of the prototype showcased the wizard model with a
-            couple of different levels of risk associated with two distinct
-            settings.
-          </p>
-          <img
-            src="./images/iteration-on-wizard-0.png"
-            alt="First version of prototype."
-          />
-          <p class="foot-note">First version of prototype.</p>
-          <p>
-            One of the interactions that required multiple iterations was around
-            the process of confirming a security setting. The goals were:
-          </p>
-          <ul>
-            <li>
-              Present succinct information so that admins can make an informed
-              security decision.
-            </li>
-            <li>
-              Confirm the identity of the admin who interacted with the security
-              setting.
-            </li>
-            <li>
-              Create friction that ensures that the admin is concious of the
-              changes applied.
-            </li>
-          </ul>
-          <img
-            src="./images/confirm-typing-password.png"
-            alt="Early version of confirmation method using password."
-          />
-          <p class="foot-note">
-            Early version of confirmation method using password.
-          </p>
-          <p>
-            One early concept explored was, forcing the admin to confirm the
-            decisdion by entering their password; this was dismissed as
-            something too aggresive and not necessary from the security
-            perspective.
-          </p>
-
-          <h4>Iterations</h4>
-          <p>
-            The majority of the iterations happened on the wizard interaction
-            model and the copy writting; we started with a model of multiple
-            levels of risk displayed at once and ended focusing only on 4
-            settings, all very high-risk.
-          </p>
-          <p>
-            The first few iterations focused only on the wizard approach; all
-            the components created were new and unique to the wizard.
-          </p>
-          <img
-            src="./images/iteration-on-wizard-1.png"
-            alt="Wizard accordion without reference to existing UI."
-          />
-          <p class="foot-note">
-            Wizard accordion without reference to existing UI.
-          </p>
-          <p>
-            The first release of this feature focused on high-risk settings
-            only; therefore, we only presented one group of settings at high
-            risk and prioritized them top to bottom depending on their score.
-            Another early idea was to add contextual information boxes next to
-            sensitive settings even if they were not activated so that admins
-            could learn about the best practices.
-          </p>
-          <img
-            src="./images/iteration-on-wizard-2.png"
-            alt="Accordion with information boxes in context."
-          />
-          <p class="foot-note">Accordion with information boxes in context.</p>
-          <p>
-            We had some versions where the grouping of the settings would
-            simplify one view but overcomplicate others; this version shows a
-            badge to recognize the number of settings under each line.
-          </p>
-          <img
-            src="./images/iteration-on-wizard-3.png"
-            alt="List of security settings grouped by type."
-          />
-          <p class="foot-note">List of security settings grouped by type.</p>
-          <p>
-            When the admin navigates into a group of settings, the accordion
-            will allow displaying one versus the other, and when one is
-            completed, it disappears from the wizard.
-          </p>
-          <img
-            src="./images/iteration-on-wizard-4.png"
-            alt="Accordion with warning boxes in context."
-          />
-          <p class="foot-note">Accordion with warning boxes in context.</p>
-          <h4>Final solution</h4>
-          <p>
-            The wizard landing page explains to the admin the list of settings
-            that need attention, shows the context of each setting and allows
-            for interaction on a single setting basis so that the confirmation
-            log is per setting.
-          </p>
-          <img
-            src="./images/final-wizard-list.png"
-            alt="Final wizard top page for list of security settings."
-          />
-          <p class="foot-note">
-            Final wizard top page for list of security settings.
-          </p>
-          <p>
-            Admins can take two paths on each security setting. They can either
-            change the setting to disengage the risk and save, or they can go
-            through the process of confirming the risk, by navigating over
-            multiple friction points to make sure the admin understands what's
-            happening.
-          </p>
-          <img
-            src="./images/final-change-setting.png"
-            alt="Change settings. Setting details without warnig boxes."
-          />
-          <p class="foot-note">
-            Change settings. Setting details without warnig boxes.
-          </p>
-          <img
-            src="./images/final-confirm-setting.png"
-            alt="Confirm risk. Setting details with overlay checkboxes."
-          />
-          <p class="foot-note">
-            Confirm risk. Setting details with overlay checkboxes.
-          </p>
-          <p>
-            When the admin dismisses the wizard, information is presented to put
-            some time pressure on the interaction, stressing the urgency of this
-            matter.
-          </p>
-          <img
-            src="./images/final-remind-later.png"
-            alt="Modal asking the admin to confirm that wants to exit the wizard."
-          />
-          <p class="foot-note">
-            Modal asking the admin to confirm that wants to exit the wizard.
-          </p>
-          <p>
-            The same components created in wizard context were also extended to
-            the pages where each setting is located; this allows the admin to
-            confirm the setting from the context that she is familiar with.
-          </p>
-          <img
-            src="./images/final-inline-access.png"
-            alt="Inline setting page new interaction to change or confirm security settings."
-          />
-          <p class="foot-note">
-            Inline setting page new interaction to change or confirm security
-            settings.
-          </p>
-        </div>
-      </div>
-    </div>
-    <hr />
-
-    <!-- Reflection -->
-    <div class="section">
-      <div class="slide">
-        <div class="slide-left-column">
-          <h3>Reflection</h3>
-        </div>
-        <div class="slide-right-column">
-          <h4>Success metrics</h4>
-          <p>
-            More than 80% of customers engaged with the interaction and
-            completed the workflow; this caused a minimal impact on the customer
-            support organization, and as planned a customer support
-            representative helped the remaining customers.
-          </p>
-          <p>
-            There are fewer customers out there with potential security
-            exposures, and for those remaining now, there is a record of someone
-            manually confirming the setting in case of a dispute.
-          </p>
-          <h4>Learnings</h4>
-          <p>
-            I learned new cybersecurity concepts and implications; I was able to
-            bring a large group of people together on a high-stake project to
-            deliver on time.
-          </p>
-          <p>
-            As a team, we developed the beginning of a framework to educate the
-            admin about the system's set up so that it is protected. We were
-            able to start the library of components for the design system, and
-            the first set of those components is applied to this UI.
-          </p>
-          <h4>Future iterations</h4>
-          <p>
-            The new interaction model used by the wizard could be used for any
-            other that required immediate and focused attention from the admin;
-            at the same time, while working on the security feature, the same
-            stakeholders pushed for the implementation of the "What's new! modal
-            to inform admins about the recently installed version."
-          </p>
-          <img src="./images/what-is-new.png" alt="What's new modal." />
-          <p class="foot-note">What's new modal.</p>
-          <p>
-            In a future release, a new project to update contacts from the
-            customer used the same interaction and wizard screen.
-          </p>
-          <img
-            src="./images/confirm-advisory-contacts.png"
-            alt="Update contacts form."
-          />
-          <p class="foot-note">Update contacts form.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section"><h2>Thank you for your time and attention!</h2></div>
 
     <!-- Scripts -->
     <script src="script.js"></script>
