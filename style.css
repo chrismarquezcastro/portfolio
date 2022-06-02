@@ -658,6 +658,12 @@ nav li:nth-of-type(4) {
     margin: 4rem 2rem;
   }
 
+  .ui-and-visual-design,
+  .ux-case-studies {
+    height: auto;
+    padding: 4rem 0;
+  }
+
   .ux-case-studies-contents {
     display: grid;
     grid-template-columns: 1fr;
