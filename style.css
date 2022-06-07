@@ -87,7 +87,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
-  gap: 1rem;
+  gap: 2rem;
   margin: 0 2rem;
   padding: 2rem 0;
 }
@@ -95,7 +95,7 @@ body {
 .cards {
   display: grid;
   grid-template-rows: auto 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .ui-and-visual-design {
@@ -110,8 +110,9 @@ body {
 .ui-and-visual-design-contents {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
   max-width: 1000px;
-  gap: 1rem;
+  gap: 2rem;
   margin: 0 2rem;
 }
 
