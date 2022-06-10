@@ -125,6 +125,9 @@ body {
 
 .project-contents {
   margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 hr {
