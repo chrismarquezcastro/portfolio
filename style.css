@@ -50,7 +50,7 @@ body {
   align-items: center;
 }
 
-.about {
+.resume {
   width: 100vw;
   display: grid;
   justify-items: center;
@@ -58,17 +58,17 @@ body {
   background-color: lightcyan;
 }
 
-.about-contents {
+.resume-contents {
   display: grid;
   gap: 1rem;
   max-width: 1000px;
   margin: 4rem 2rem;
 }
 
-.qualifications,
 .skills,
-.professional-experience,
-.education {
+.work-experience,
+.education,
+.interests {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
@@ -189,6 +189,10 @@ small {
 }
 
 p,
+ul {
+  padding-left: 0;
+}
+
 li {
   font-size: 1.1rem;
   font-weight: 400;
@@ -500,7 +504,7 @@ nav li:nth-of-type(4) {
   margin: 2rem;
 }
 
-.about-contents h3 {
+.resume-contents h3 {
   text-align: center;
 }
 
@@ -697,11 +701,12 @@ nav li:nth-of-type(4) {
     gap: 1rem;
   }
 
-  .qualifications,
   .skills,
-  .professional-experience,
-  .education {
+  .work-experience,
+  .education,
+  .interests {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   nav a,
