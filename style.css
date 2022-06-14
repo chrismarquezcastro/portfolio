@@ -85,16 +85,16 @@ body {
 
 .ux-case-studies-contents {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   max-width: 1000px;
   gap: 2rem;
   margin: 0 2rem;
   padding: 2rem 0;
 }
 
-.cards {
+.cards-ux-case-studies {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
@@ -109,11 +109,16 @@ body {
 
 .ui-and-visual-design-contents {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
   max-width: 1000px;
   gap: 2rem;
   margin: 0 2rem;
+}
+
+.cards-ui-case-studies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .project-container {
@@ -128,6 +133,11 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+}
+
+.card-header {
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
 hr {
@@ -214,10 +224,10 @@ li {
   margin-top: 2rem;
   font-size: 1.5rem;
   position: fixed;
-  left: 7rem;
+  left: 5.5rem;
   top: 0;
   background-color: var(--transparent-primary-bg-color);
-  border-radius: 2rem;
+  border-radius: 2rem 0;
   padding: 0 1rem;
 }
 
@@ -368,12 +378,12 @@ nav li:nth-of-type(4) {
 .menu-bars {
   position: fixed;
   top: 1rem;
-  left: 2rem;
+  left: 1rem;
   z-index: 10;
   display: inline;
   cursor: pointer;
   padding: 1rem;
-  border-radius: 2rem;
+  border-radius: 0 2rem;
   background-color: var(--transparent-primary-bg-color);
 }
 
@@ -641,6 +651,15 @@ nav li:nth-of-type(4) {
   .home-cover-img img {
     width: 90%;
   }
+
+  .ui-and-visual-design {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .cards-ui-case-studies {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Media query: smaller than 700px */
@@ -659,6 +678,7 @@ nav li:nth-of-type(4) {
   .ux-case-studies {
     height: auto;
     padding: 4rem 0;
+    grid-template-columns: 1fr;
   }
 
   .ux-case-studies-contents {
@@ -671,8 +691,9 @@ nav li:nth-of-type(4) {
     grid-template-columns: 1fr;
   }
 
-  .cards {
-    display: grid;
+  .cards-ui-case-studies,
+  .cards-ux-case-studies {
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
