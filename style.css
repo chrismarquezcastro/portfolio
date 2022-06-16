@@ -546,31 +546,6 @@ nav li:nth-of-type(4) {
   margin-top: 0;
 }
 
-.cover-vertical-video {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-.cover-vertical-video li {
-  font-weight: 700;
-}
-
-.cover-vertical-video video {
-  margin-top: 2rem;
-}
-
-.cover-vertical-video h1,
-.cover-vertical-video p {
-  text-align: left;
-}
-
-.quetzal {
-  width: 50%;
-}
-
 .slide-left-column small,
 .slide-left-column h2 {
   text-align: left;
@@ -599,8 +574,8 @@ nav li:nth-of-type(4) {
   font-weight: 500;
   background-color: var(--hyperlink-color);
   color: var(--secondary-bg-color);
-  border: none;
-  border-radius: 1rem;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 0.75rem;
   padding: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
@@ -608,7 +583,7 @@ nav li:nth-of-type(4) {
 
 .slide-right-column button:hover,
 .card button:hover {
-  box-shadow: 0 0 1rem var(--hyperlink-color);
+  box-shadow: 0.25rem 0.25rem 0 var(--primary-text-color);
   color: var(--secondary-bg-color);
   background-color: var(--hyperlink-color);
   transform: translateY(-2px);
@@ -616,9 +591,9 @@ nav li:nth-of-type(4) {
 
 .slide-right-column button:active,
 .card button:active {
-  box-shadow: 0 0 0.1rem var(--hyperlink-color);
-  border: none;
-  transform: translateY(2px);
+  box-shadow: 0.1rem 0.1rem 0 var(--primary-text-color);
+  transform: translateY(1px);
+  transform: translateX(1px);
 }
 
 .slide-right-column button i {
@@ -645,11 +620,6 @@ nav li:nth-of-type(4) {
   .slide-right-column video {
     padding: 2.5rem 1rem;
     padding: 0.25rem;
-  }
-
-  .cover-vertical-video h1,
-  .cover-vertical-video p {
-    text-align: left;
   }
 
   .home-cover-img img {
@@ -784,9 +754,5 @@ nav li:nth-of-type(4) {
 
   .dropdown-content {
     transform: translateX(-5rem);
-  }
-
-  .cover-vertical-video {
-    grid-template-columns: 1fr;
   }
 }
