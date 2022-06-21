@@ -276,6 +276,18 @@ nav ul li {
   height: 25%;
 }
 
+nav li p{
+  position: relative;
+  top: 45%;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 nav li a {
   position: relative;
   top: 45%;
