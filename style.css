@@ -276,7 +276,7 @@ nav ul li {
   height: 25%;
 }
 
-nav li p{
+nav li p {
   position: relative;
   top: 45%;
   color: var(--primary-text-color);
@@ -596,13 +596,14 @@ nav li:nth-of-type(4) {
 .slide-right-column button:hover,
 .card button:hover {
   box-shadow: 0.25rem 0.25rem 0 var(--primary-text-color);
-  color: var(--secondary-bg-color);
+  filter: brightness(133%);
   background-color: var(--hyperlink-color);
   transform: translateY(-2px);
 }
 
 .slide-right-column button:active,
 .card button:active {
+  filter: brightness(66%);
   box-shadow: 0.1rem 0.1rem 0 var(--primary-text-color);
   transform: translateY(1px);
   transform: translateX(1px);
