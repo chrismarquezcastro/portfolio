@@ -6,7 +6,7 @@
   --text-body-color: rgb(15, 16, 17);
   --secondary-text-color: #6e7680;
   --hyperlink-color: rgb(0, 85, 255);
-  --primary-bg-color: #fffefc;
+  --primary-bg-color: linear-gradient(to bottom right, #fffefc, #f4e0b4);
   --transparent-primary-bg-color: #ffffffab;
   --secondary-bg-color: white;
   --terciary-bg-color: #eaedf13e;
@@ -39,8 +39,7 @@
 body {
   font-family: "Work Sans", sans-serif;
   margin: 0;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23eef0e9' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: var(--primary-bg-color);
 }
 
 .home {
@@ -314,7 +313,7 @@ nav li a::after {
   content: "";
   width: 25vw;
   height: 4px;
-  background-color: var(--primary-bg-color);
+  background-color: white;
   position: absolute;
   top: 47.5%;
   right: 0;
@@ -326,8 +325,7 @@ nav li a:hover::after {
 }
 
 nav li:nth-of-type(1) {
-  background-color: var(--primary-bg-color);
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23eef0e9' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: var(--primary-bg-color);
 }
 
 nav li:nth-of-type(2) {
