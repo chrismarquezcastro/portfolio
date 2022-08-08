@@ -245,6 +245,10 @@ li {
   line-height: 150%;
 }
 
+.retina {
+  width: 50%;
+}
+
 /* Navigation menu */
 
 .chris-studio-logo {
