@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #8bff60;
+        stroke-width: 13.4px;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #ff0084;
+      }
+    </style>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard 1">
+    <path class="cls-1" d="M367,184c92.784,0,168,64.471,168,144S459.784,472,367,472,199,407.529,199,328,274.216,184,367,184Z"/>
+    <path id="Triangle_1" data-name="Triangle 1" class="cls-2" d="M221,61L379,354H63Z"/>
+  </g>
+</svg>

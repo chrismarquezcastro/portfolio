@@ -65,9 +65,16 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
+  grid-template-columns: 2fr 1fr;
   justify-items: center;
   align-items: center;
   background-image: var(--bg-gradient-1);
+  padding: 8rem 3rem 3rem;
+  box-sizing: border-box;
+}
+
+.home img {
+  width: 100%;
 }
 
 .resume {
@@ -179,7 +186,7 @@ li {
 
 h1 {
   font-family: masqualero, serif;
-  font-size: 4rem;
+  font-size: 5rem;
   letter-spacing: 0.5px;
 }
 
@@ -508,10 +515,6 @@ nav li:nth-of-type(4) {
   max-width: 600px;
 }
 
-.home-cover-img img {
-  max-width: 404px;
-}
-
 .section {
   max-width: 1000px;
   display: grid;
@@ -533,14 +536,6 @@ nav li:nth-of-type(4) {
   background-color: var(--terciary-bg-color);
   padding: 0.25rem;
   border-radius: 0.5rem;
-}
-
-.home-contents {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  max-width: 1000px;
-  margin: 2rem;
 }
 
 .resume-contents h3,
@@ -684,10 +679,6 @@ a .card {
     padding: 0.25rem;
   }
 
-  .home-cover-img img {
-    width: 90%;
-  }
-
   .ui-and-visual-design {
     height: 100vh;
     padding-bottom: 3rem;
@@ -703,11 +694,8 @@ a .card {
 @media (max-width: 700px) {
   .home {
     height: auto;
-  }
-
-  .home-contents {
     grid-template-columns: 1fr;
-    margin: 6rem 3rem 3rem;
+    padding-top: 10rem;
   }
 
   .ui-and-visual-design,
@@ -791,10 +779,6 @@ a .card {
 
   .large-cover-img {
     max-width: 66%;
-  }
-
-  .home-cover-img img {
-    max-width: 50%;
   }
 
   .slide-left-column {
